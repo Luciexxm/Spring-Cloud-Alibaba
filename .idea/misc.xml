@@ -15,9 +15,6 @@
       </list>
     </option>
   </component>
-  <component name="ProjectDictionaryState">
-    <dictionary name="mmx" />
-  </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
       <profile-state>
@@ -34,4 +31,5 @@
       </profile-state>
     </entry>
   </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
 </project>
