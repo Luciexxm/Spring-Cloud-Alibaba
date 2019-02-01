@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Spring-Cloud-Alibaba.iml" filepath="$PROJECT_DIR$/.idea/Spring-Cloud-Alibaba.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myshop-commons/myshop-commons.iml" filepath="$PROJECT_DIR$/myshop-commons/myshop-commons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myshop-commons-domain/myshop-commons-domain.iml" filepath="$PROJECT_DIR$/myshop-commons-domain/myshop-commons-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myshop-commons-mapper/myshop-commons-mapper.iml" filepath="$PROJECT_DIR$/myshop-commons-mapper/myshop-commons-mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myshop-commons-service/myshop-commons-service.iml" filepath="$PROJECT_DIR$/myshop-commons-service/myshop-commons-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myshop-database/myshop-database.iml" filepath="$PROJECT_DIR$/myshop-database/myshop-database.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myshop-dependencies/myshop-dependencies.iml" filepath="$PROJECT_DIR$/myshop-dependencies/myshop-dependencies.iml" />
+    </modules>
+  </component>
+</project>
