@@ -20,6 +20,8 @@ public class NacosProviderApplication {
     private String port;
 
 
+
+
     @RestController
     public class EchoController {
         @GetMapping(value = "/echo/{message}")
@@ -27,4 +29,6 @@ public class NacosProviderApplication {
             return "Hello Nacos Discovery " + message + " i am from port " + port;
         }
     }
+
+
 }

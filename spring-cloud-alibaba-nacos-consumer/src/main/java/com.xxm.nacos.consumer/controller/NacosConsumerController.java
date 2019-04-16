@@ -26,7 +26,7 @@ public class NacosConsumerController {
         ServiceInstance serviceInstance = loadBalancerClient.choose("nacos-provider");
         String url = String.format("http://%s:%s/echo/%s", serviceInstance.getHost(), serviceInstance.getPort(), appName);
 
-        return restTemplate.getForObject(url, String.class)+url;
+        return restTemplate.getForObject(url, String.class)+"\n"+url;
     }
 
 }
