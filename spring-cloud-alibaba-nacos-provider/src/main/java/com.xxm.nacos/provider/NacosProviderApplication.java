@@ -21,7 +21,6 @@ public class NacosProviderApplication {
 
 
 
-
     @RestController
     public class EchoController {
         @GetMapping(value = "/echo/{message}")
