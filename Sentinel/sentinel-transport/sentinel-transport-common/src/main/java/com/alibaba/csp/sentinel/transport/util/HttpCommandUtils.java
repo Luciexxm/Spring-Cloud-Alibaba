@@ -33,5 +33,6 @@ public final class HttpCommandUtils {
         return request.getMetadata().get(REQUEST_TARGET);
     }
 
-    private HttpCommandUtils() {}
+    private HttpCommandUtils() {
+    }
 }

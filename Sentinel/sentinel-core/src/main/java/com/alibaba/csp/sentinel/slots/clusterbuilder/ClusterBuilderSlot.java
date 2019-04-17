@@ -73,7 +73,7 @@ public class ClusterBuilderSlot extends AbstractLinkedProcessorSlot<DefaultNode>
     @Override
     public void entry(Context context, ResourceWrapper resourceWrapper, DefaultNode node, int count,
                       boolean prioritized, Object... args)
-        throws Throwable {
+            throws Throwable {
         if (clusterNode == null) {
             synchronized (lock) {
                 if (clusterNode == null) {

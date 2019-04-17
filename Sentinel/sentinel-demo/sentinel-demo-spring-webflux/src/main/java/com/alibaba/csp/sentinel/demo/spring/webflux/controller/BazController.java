@@ -40,12 +40,12 @@ public class BazController {
     @GetMapping("/{id}")
     public Mono<String> apiGetValue(@PathVariable("id") Long id) {
         return bazService.getById(id)
-            .transform(new SentinelReactorTransformer<>("BazService:getById"));
+                .transform(new SentinelReactorTransformer<>("BazService:getById"));
     }
 
     @PostMapping("/{id}")
     public Mono<Boolean> apiSetValue(@PathVariable("id") Long id, @RequestBody String value) {
         return bazService.setValue(id, value)
-            .transform(new SentinelReactorTransformer<>("BazService:setValue"));
+                .transform(new SentinelReactorTransformer<>("BazService:setValue"));
     }
 }

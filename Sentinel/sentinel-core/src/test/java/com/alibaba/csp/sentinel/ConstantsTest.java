@@ -16,7 +16,7 @@ public class ConstantsTest {
         assertEquals(4900, Constants.TIME_DROP_VALVE);
     }
 
-//    add JVM parameter
+    //    add JVM parameter
 //    -Dcsp.sentinel.statistic.max.rt=10000
 //    @Test
     public void testCustomTimeDropValue() {

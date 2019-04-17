@@ -47,11 +47,11 @@ public class SentinelGrpcServerInterceptorTest {
 
     private void configureFlowRule(int count) {
         FlowRule rule = new FlowRule()
-            .setCount(count)
-            .setGrade(RuleConstant.FLOW_GRADE_QPS)
-            .setResource(resourceName)
-            .setLimitApp("default")
-            .as(FlowRule.class);
+                .setCount(count)
+                .setGrade(RuleConstant.FLOW_GRADE_QPS)
+                .setResource(resourceName)
+                .setLimitApp("default")
+                .as(FlowRule.class);
         FlowRuleManager.loadRules(Collections.singletonList(rule));
     }
 

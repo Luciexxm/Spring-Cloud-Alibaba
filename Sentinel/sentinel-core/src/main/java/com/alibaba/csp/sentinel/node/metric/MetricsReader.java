@@ -124,7 +124,7 @@ class MetricsReader {
         List<MetricNode> list = new ArrayList<MetricNode>(1024);
         if (readMetricsInOneFileByEndTime(list, fileNames.get(pos++), offset, beginTimeMs, endTimeMs, identity)) {
             while (pos < fileNames.size()
-                && readMetricsInOneFileByEndTime(list, fileNames.get(pos++), 0, beginTimeMs, endTimeMs, identity)) {
+                    && readMetricsInOneFileByEndTime(list, fileNames.get(pos++), 0, beginTimeMs, endTimeMs, identity)) {
             }
         }
         return list;

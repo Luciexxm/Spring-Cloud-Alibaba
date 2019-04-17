@@ -71,10 +71,11 @@ public final class HostNameUtil {
 
     public static String getConfigString() {
         return "{\n"
-            + "\t\"machine\": \"" + hostName + "\",\n"
-            + "\t\"ip\": \"" + ip + "\"\n"
-            + "}";
+                + "\t\"machine\": \"" + hostName + "\",\n"
+                + "\t\"ip\": \"" + ip + "\"\n"
+                + "}";
     }
 
-    private HostNameUtil() {}
+    private HostNameUtil() {
+    }
 }

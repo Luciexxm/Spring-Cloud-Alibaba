@@ -48,9 +48,9 @@ public class ParamFlowRequestProcessor implements RequestProcessor<ParamFlowRequ
 
     private ClusterResponse<FlowTokenResponseData> toResponse(TokenResult result, ClusterRequest request) {
         return new ClusterResponse<>(request.getId(), request.getType(), result.getStatus(),
-            new FlowTokenResponseData()
-                .setRemainingCount(result.getRemaining())
-                .setWaitInMs(0)
+                new FlowTokenResponseData()
+                        .setRemainingCount(result.getRemaining())
+                        .setWaitInMs(0)
         );
     }
 }

@@ -52,7 +52,7 @@ public class ParamFlowCheckerTest {
         rule.setParamIdx(paramIdx);
 
         assertTrue("The rule will pass if the paramIdx exceeds provided args",
-            ParamFlowChecker.passCheck(resourceWrapper, rule, 1, "abc"));
+                ParamFlowChecker.passCheck(resourceWrapper, rule, 1, "abc"));
     }
 
     @Test
@@ -71,8 +71,8 @@ public class ParamFlowCheckerTest {
         String valueA = "valueA";
         String valueB = "valueB";
         ParameterMetric metric = mock(ParameterMetric.class);
-        when(metric.getPassParamQps(paramIdx, valueA)).thenReturn((double)threshold - 1);
-        when(metric.getPassParamQps(paramIdx, valueB)).thenReturn((double)threshold + 1);
+        when(metric.getPassParamQps(paramIdx, valueA)).thenReturn((double) threshold - 1);
+        when(metric.getPassParamQps(paramIdx, valueB)).thenReturn((double) threshold + 1);
         ParamFlowSlot.getMetricsMap().put(resourceWrapper, metric);
 
         assertTrue(ParamFlowChecker.passSingleValueCheck(resourceWrapper, rule, 1, valueA));
@@ -106,10 +106,10 @@ public class ParamFlowCheckerTest {
         rule.setParsedHotItems(map);
 
         ParameterMetric metric = mock(ParameterMetric.class);
-        when(metric.getPassParamQps(paramIdx, valueA)).thenReturn((double)globalThreshold - 1);
-        when(metric.getPassParamQps(paramIdx, valueB)).thenReturn((double)globalThreshold - 1);
-        when(metric.getPassParamQps(paramIdx, valueC)).thenReturn((double)globalThreshold - 1);
-        when(metric.getPassParamQps(paramIdx, valueD)).thenReturn((double)globalThreshold + 1);
+        when(metric.getPassParamQps(paramIdx, valueA)).thenReturn((double) globalThreshold - 1);
+        when(metric.getPassParamQps(paramIdx, valueB)).thenReturn((double) globalThreshold - 1);
+        when(metric.getPassParamQps(paramIdx, valueC)).thenReturn((double) globalThreshold - 1);
+        when(metric.getPassParamQps(paramIdx, valueD)).thenReturn((double) globalThreshold + 1);
         ParamFlowSlot.getMetricsMap().put(resourceWrapper, metric);
 
         assertTrue(ParamFlowChecker.passSingleValueCheck(resourceWrapper, rule, 1, valueA));
@@ -117,11 +117,11 @@ public class ParamFlowCheckerTest {
         assertTrue(ParamFlowChecker.passSingleValueCheck(resourceWrapper, rule, 1, valueC));
         assertTrue(ParamFlowChecker.passSingleValueCheck(resourceWrapper, rule, 1, valueD));
 
-        when(metric.getPassParamQps(paramIdx, valueA)).thenReturn((double)globalThreshold);
-        when(metric.getPassParamQps(paramIdx, valueB)).thenReturn((double)thresholdB - 1L);
-        when(metric.getPassParamQps(paramIdx, valueC)).thenReturn((double)globalThreshold + 1);
-        when(metric.getPassParamQps(paramIdx, valueD)).thenReturn((double)globalThreshold - 1)
-            .thenReturn((double)thresholdD);
+        when(metric.getPassParamQps(paramIdx, valueA)).thenReturn((double) globalThreshold);
+        when(metric.getPassParamQps(paramIdx, valueB)).thenReturn((double) thresholdB - 1L);
+        when(metric.getPassParamQps(paramIdx, valueC)).thenReturn((double) globalThreshold + 1);
+        when(metric.getPassParamQps(paramIdx, valueD)).thenReturn((double) globalThreshold - 1)
+                .thenReturn((double) thresholdD);
 
         assertFalse(ParamFlowChecker.passSingleValueCheck(resourceWrapper, rule, 1, valueA));
         assertTrue(ParamFlowChecker.passSingleValueCheck(resourceWrapper, rule, 1, valueB));
@@ -141,9 +141,9 @@ public class ParamFlowCheckerTest {
         int thresholdD = 7;
 
         ParamFlowRule rule = new ParamFlowRule(resourceName)
-            .setCount(globalThreshold)
-            .setParamIdx(paramIdx)
-            .setGrade(RuleConstant.FLOW_GRADE_THREAD);
+                .setCount(globalThreshold)
+                .setParamIdx(paramIdx)
+                .setGrade(RuleConstant.FLOW_GRADE_THREAD);
 
         String valueA = "valueA";
         String valueB = "valueB";
@@ -172,7 +172,7 @@ public class ParamFlowCheckerTest {
         when(metric.getThreadCount(paramIdx, valueB)).thenReturn(thresholdB - 1L);
         when(metric.getThreadCount(paramIdx, valueC)).thenReturn(globalThreshold + 1);
         when(metric.getThreadCount(paramIdx, valueD)).thenReturn(globalThreshold - 1)
-            .thenReturn((long)thresholdD);
+                .thenReturn((long) thresholdD);
 
         assertFalse(ParamFlowChecker.passSingleValueCheck(resourceWrapper, rule, 1, valueA));
         assertTrue(ParamFlowChecker.passSingleValueCheck(resourceWrapper, rule, 1, valueB));
@@ -189,18 +189,18 @@ public class ParamFlowCheckerTest {
         double globalThreshold = 10;
 
         ParamFlowRule rule = new ParamFlowRule(resourceName)
-            .setParamIdx(paramIdx)
-            .setCount(globalThreshold);
+                .setParamIdx(paramIdx)
+                .setCount(globalThreshold);
 
         String v1 = "a", v2 = "B", v3 = "Cc";
         List<String> list = Arrays.asList(v1, v2, v3);
         ParameterMetric metric = mock(ParameterMetric.class);
         when(metric.getPassParamQps(paramIdx, v1)).thenReturn(globalThreshold - 2)
-            .thenReturn(globalThreshold - 1);
+                .thenReturn(globalThreshold - 1);
         when(metric.getPassParamQps(paramIdx, v2)).thenReturn(globalThreshold - 2)
-            .thenReturn(globalThreshold - 1);
+                .thenReturn(globalThreshold - 1);
         when(metric.getPassParamQps(paramIdx, v3)).thenReturn(globalThreshold - 1)
-            .thenReturn(globalThreshold);
+                .thenReturn(globalThreshold);
         ParamFlowSlot.getMetricsMap().put(resourceWrapper, metric);
 
         assertTrue(ParamFlowChecker.passCheck(resourceWrapper, rule, 1, list));
@@ -215,18 +215,18 @@ public class ParamFlowCheckerTest {
         double globalThreshold = 10;
 
         ParamFlowRule rule = new ParamFlowRule(resourceName)
-            .setParamIdx(paramIdx)
-            .setCount(globalThreshold);
+                .setParamIdx(paramIdx)
+                .setCount(globalThreshold);
 
         String v1 = "a", v2 = "B", v3 = "Cc";
-        Object arr = new String[] {v1, v2, v3};
+        Object arr = new String[]{v1, v2, v3};
         ParameterMetric metric = mock(ParameterMetric.class);
         when(metric.getPassParamQps(paramIdx, v1)).thenReturn(globalThreshold - 2)
-            .thenReturn(globalThreshold - 1);
+                .thenReturn(globalThreshold - 1);
         when(metric.getPassParamQps(paramIdx, v2)).thenReturn(globalThreshold - 2)
-            .thenReturn(globalThreshold - 1);
+                .thenReturn(globalThreshold - 1);
         when(metric.getPassParamQps(paramIdx, v3)).thenReturn(globalThreshold - 1)
-            .thenReturn(globalThreshold);
+                .thenReturn(globalThreshold);
         ParamFlowSlot.getMetricsMap().put(resourceWrapper, metric);
 
         assertTrue(ParamFlowChecker.passCheck(resourceWrapper, rule, 1, arr));

@@ -50,7 +50,7 @@ import com.alibaba.csp.sentinel.slots.block.degrade.DegradeRuleManager;
  * </ul>
  *
  * </p>
- *
+ * <p>
  * Run this demo, and the out put will be like:
  *
  * <pre>
@@ -169,7 +169,7 @@ public class RtDegradeDemo {
                 oldBlock = globalBlock;
 
                 System.out.println(TimeUtil.currentTimeMillis() + ", total:" + oneSecondTotal
-                    + ", pass:" + oneSecondPass + ", block:" + oneSecondBlock);
+                        + ", pass:" + oneSecondPass + ", block:" + oneSecondBlock);
 
                 if (seconds-- <= 0) {
                     stop = true;
@@ -179,7 +179,7 @@ public class RtDegradeDemo {
             long cost = System.currentTimeMillis() - start;
             System.out.println("time cost: " + cost + " ms");
             System.out.println("total:" + total.get() + ", pass:" + pass.get()
-                + ", block:" + block.get());
+                    + ", block:" + block.get());
             System.exit(0);
         }
     }

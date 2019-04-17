@@ -61,9 +61,10 @@ public final class ClusterParamMetricStatistics {
         Set<Long> keySet = METRIC_MAP.keySet();
         for (Long id : keySet) {
             METRIC_MAP.put(id, new ClusterParamMetric(ClusterServerConfigManager.getSampleCount(),
-                ClusterServerConfigManager.getIntervalMs()));
+                    ClusterServerConfigManager.getIntervalMs()));
         }
     }
 
-    private ClusterParamMetricStatistics() {}
+    private ClusterParamMetricStatistics() {
+    }
 }

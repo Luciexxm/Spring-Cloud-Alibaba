@@ -36,7 +36,7 @@ public class MethodUtilTest {
         }
         assertNotNull(fooMethod);
         assertEquals("com.alibaba.csp.sentinel.util.MethodUtilTest$GoodClass:foo(long[],java.lang.String,java.lang.Integer[])",
-            MethodUtil.resolveMethodName(fooMethod));
+                MethodUtil.resolveMethodName(fooMethod));
 
         Method bazMethod = null;
         for (Method m : GoodClass.class.getMethods()) {
@@ -47,7 +47,7 @@ public class MethodUtilTest {
         }
         assertNotNull(bazMethod);
         assertEquals("com.alibaba.csp.sentinel.util.MethodUtilTest$GoodClass:baz(double)",
-            MethodUtil.resolveMethodName(bazMethod));
+                MethodUtil.resolveMethodName(bazMethod));
     }
 
     interface GoodClass {

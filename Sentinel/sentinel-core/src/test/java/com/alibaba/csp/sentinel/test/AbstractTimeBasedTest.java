@@ -24,25 +24,24 @@ import com.alibaba.csp.sentinel.util.TimeUtil;
 
 /**
  * Mock support for {@link TimeUtil}
- * 
- * @author jason
  *
+ * @author jason
  */
 @RunWith(PowerMockRunner.class)
-@PrepareForTest({ TimeUtil.class })
+@PrepareForTest({TimeUtil.class})
 public abstract class AbstractTimeBasedTest {
     private long currentMillis = 0;
-    
+
     {
         PowerMockito.mockStatic(TimeUtil.class);
         PowerMockito.when(TimeUtil.currentTimeMillis()).thenReturn(currentMillis);
     }
-    
+
     protected final void setCurrentMillis(long cur) {
         currentMillis = cur;
         PowerMockito.when(TimeUtil.currentTimeMillis()).thenReturn(currentMillis);
     }
-    
+
     protected final void sleep(int t) {
         currentMillis += t;
         PowerMockito.when(TimeUtil.currentTimeMillis()).thenReturn(currentMillis);

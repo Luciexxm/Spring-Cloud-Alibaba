@@ -35,7 +35,7 @@ public class ClusterClientConfig {
     @Override
     public String toString() {
         return "ClusterClientConfig{" +
-            "requestTimeout=" + requestTimeout +
-            '}';
+                "requestTimeout=" + requestTimeout +
+                '}';
     }
 }

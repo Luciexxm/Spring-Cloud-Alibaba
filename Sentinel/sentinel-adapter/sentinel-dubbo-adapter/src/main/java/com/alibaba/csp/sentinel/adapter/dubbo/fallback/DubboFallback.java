@@ -30,9 +30,9 @@ public interface DubboFallback {
     /**
      * Handle the block exception and provide fallback result.
      *
-     * @param invoker Dubbo invoker
+     * @param invoker    Dubbo invoker
      * @param invocation Dubbo invocation
-     * @param ex block exception
+     * @param ex         block exception
      * @return fallback result
      */
     Result handle(Invoker<?> invoker, Invocation invocation, BlockException ex);

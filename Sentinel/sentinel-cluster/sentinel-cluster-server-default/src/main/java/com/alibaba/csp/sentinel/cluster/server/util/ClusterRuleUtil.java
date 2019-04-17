@@ -25,5 +25,6 @@ public final class ClusterRuleUtil {
         return id != null && id > 0;
     }
 
-    private ClusterRuleUtil() {}
+    private ClusterRuleUtil() {
+    }
 }

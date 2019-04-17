@@ -73,17 +73,17 @@ public class ClusterClientStateEntity {
 
     public ClusterClientAssignConfig toAssignConfig() {
         return new ClusterClientAssignConfig()
-            .setServerHost(serverHost)
-            .setServerPort(serverPort);
+                .setServerHost(serverHost)
+                .setServerPort(serverPort);
     }
 
     @Override
     public String toString() {
         return "ClusterClientStateEntity{" +
-            "serverHost='" + serverHost + '\'' +
-            ", serverPort=" + serverPort +
-            ", clientState=" + clientState +
-            ", requestTimeout=" + requestTimeout +
-            '}';
+                "serverHost='" + serverHost + '\'' +
+                ", serverPort=" + serverPort +
+                ", clientState=" + clientState +
+                ", requestTimeout=" + requestTimeout +
+                '}';
     }
 }

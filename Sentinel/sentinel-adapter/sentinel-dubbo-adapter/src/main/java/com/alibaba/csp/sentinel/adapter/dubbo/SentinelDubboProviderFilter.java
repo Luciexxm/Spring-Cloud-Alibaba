@@ -33,7 +33,7 @@ import com.alibaba.dubbo.rpc.RpcException;
 
 /**
  * <p>Dubbo service provider filter for Sentinel. Auto activated by default.</p>
- *
+ * <p>
  * If you want to disable the provider filter, you can configure:
  * <pre>
  * &lt;dubbo:provider filter="-sentinel.dubbo.provider.filter"/&gt;

@@ -32,7 +32,7 @@ import org.apache.dubbo.rpc.RpcException;
 
 /**
  * <p>Dubbo service consumer filter for Sentinel. Auto activated by default.</p>
- *
+ * <p>
  * If you want to disable the consumer filter, you can configure:
  * <pre>
  * &lt;dubbo:consumer filter="-sentinel.dubbo.consumer.filter"/&gt;

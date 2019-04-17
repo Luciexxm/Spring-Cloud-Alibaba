@@ -32,7 +32,7 @@ public interface BlockRequestHandler {
      * Handle the blocked request.
      *
      * @param exchange server exchange object
-     * @param t block exception
+     * @param t        block exception
      * @return server response to return
      */
     Mono<ServerResponse> handleRequest(ServerWebExchange exchange, Throwable t);

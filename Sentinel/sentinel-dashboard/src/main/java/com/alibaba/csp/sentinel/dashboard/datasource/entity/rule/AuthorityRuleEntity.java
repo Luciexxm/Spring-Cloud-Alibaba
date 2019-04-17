@@ -27,7 +27,8 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
  */
 public class AuthorityRuleEntity extends AbstractRuleEntity<AuthorityRule> {
 
-    public AuthorityRuleEntity() {}
+    public AuthorityRuleEntity() {
+    }
 
     public AuthorityRuleEntity(AuthorityRule authorityRule) {
         AssertUtil.notNull(authorityRule, "Authority rule should not be null");
@@ -56,7 +57,7 @@ public class AuthorityRuleEntity extends AbstractRuleEntity<AuthorityRule> {
     public int getStrategy() {
         return rule.getStrategy();
     }
-    
+
     @Override
     public Rule toRule() {
         return rule;

@@ -78,8 +78,8 @@ final class ClusterFlowChecker {
             }
             // Remaining count is cut down to a smaller integer.
             return new TokenResult(TokenResultStatus.OK)
-                .setRemaining((int) nextRemaining)
-                .setWaitInMs(0);
+                    .setRemaining((int) nextRemaining)
+                    .setWaitInMs(0);
         } else {
             if (prioritized) {
                 // Try to occupy incoming buckets.
@@ -90,8 +90,8 @@ final class ClusterFlowChecker {
                     if (waitInMs > 0) {
                         ClusterServerStatLogUtil.log("flow|waiting|" + id);
                         return new TokenResult(TokenResultStatus.SHOULD_WAIT)
-                            .setRemaining(0)
-                            .setWaitInMs(waitInMs);
+                                .setRemaining(0)
+                                .setWaitInMs(waitInMs);
                     }
                     // Or else occupy failed, should be blocked.
                 }
@@ -113,9 +113,10 @@ final class ClusterFlowChecker {
 
     private static TokenResult blockedResult() {
         return new TokenResult(TokenResultStatus.BLOCKED)
-            .setRemaining(0)
-            .setWaitInMs(0);
+                .setRemaining(0)
+                .setWaitInMs(0);
     }
 
-    private ClusterFlowChecker() {}
+    private ClusterFlowChecker() {
+    }
 }

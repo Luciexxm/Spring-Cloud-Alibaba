@@ -31,8 +31,8 @@ public class ParamFlowStatisticSlotCallbackInit implements InitFunc {
     @Override
     public void init() {
         StatisticSlotCallbackRegistry.addEntryCallback(ParamFlowStatisticEntryCallback.class.getName(),
-            new ParamFlowStatisticEntryCallback());
+                new ParamFlowStatisticEntryCallback());
         StatisticSlotCallbackRegistry.addExitCallback(ParamFlowStatisticExitCallback.class.getName(),
-            new ParamFlowStatisticExitCallback());
+                new ParamFlowStatisticExitCallback());
     }
 }

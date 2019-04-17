@@ -25,5 +25,6 @@ public final class DemoConstants {
     public static final String FLOW_POSTFIX = "-flow-rules";
     public static final String PARAM_FLOW_POSTFIX = "-param-rules";
 
-    private DemoConstants() {}
+    private DemoConstants() {
+    }
 }

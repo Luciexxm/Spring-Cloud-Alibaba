@@ -114,8 +114,8 @@ class FlowQpsRunner {
 
                 System.out.println(seconds + " send qps is: " + oneSecondTotal);
                 System.out.println(TimeUtil.currentTimeMillis() + ", total:" + oneSecondTotal
-                    + ", pass:" + oneSecondPass
-                    + ", block:" + oneSecondBlock);
+                        + ", pass:" + oneSecondPass
+                        + ", block:" + oneSecondBlock);
 
                 if (seconds-- <= 0) {
                     stop = true;
@@ -125,7 +125,7 @@ class FlowQpsRunner {
             long cost = System.currentTimeMillis() - start;
             System.out.println("time cost: " + cost + " ms");
             System.out.println("total:" + total.get() + ", pass:" + pass.get()
-                + ", block:" + block.get());
+                    + ", block:" + block.get());
             System.exit(0);
         }
     }

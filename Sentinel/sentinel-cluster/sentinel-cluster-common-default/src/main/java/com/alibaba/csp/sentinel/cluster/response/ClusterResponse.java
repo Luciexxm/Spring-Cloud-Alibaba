@@ -27,7 +27,8 @@ public class ClusterResponse<T> implements Response {
 
     private T data;
 
-    public ClusterResponse() {}
+    public ClusterResponse() {
+    }
 
     public ClusterResponse(int id, int type, int status, T data) {
         this.id = id;
@@ -78,10 +79,10 @@ public class ClusterResponse<T> implements Response {
     @Override
     public String toString() {
         return "ClusterResponse{" +
-            "id=" + id +
-            ", type=" + type +
-            ", status=" + status +
-            ", data=" + data +
-            '}';
+                "id=" + id +
+                ", type=" + type +
+                ", status=" + status +
+                ", data=" + data +
+                '}';
     }
 }

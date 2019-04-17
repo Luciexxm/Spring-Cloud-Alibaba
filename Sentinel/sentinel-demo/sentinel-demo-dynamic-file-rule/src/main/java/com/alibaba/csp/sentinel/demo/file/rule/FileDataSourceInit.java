@@ -50,7 +50,8 @@ public class FileDataSourceInit implements InitFunc {
         String flowRulePath = flowRuleDir + "/" + flowRuleFile;
 
         ReadableDataSource<String, List<FlowRule>> ds = new FileRefreshableDataSource<>(
-            flowRulePath, source -> JSON.parseObject(source, new TypeReference<List<FlowRule>>() {})
+                flowRulePath, source -> JSON.parseObject(source, new TypeReference<List<FlowRule>>() {
+        })
         );
         // Register to flow rule manager.
         FlowRuleManager.register2Property(ds.getProperty());

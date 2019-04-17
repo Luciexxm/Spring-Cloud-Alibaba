@@ -83,19 +83,19 @@ public final class ClusterParamFlowChecker {
             remaining = -1;
         }
 
-        return hasPassed ? newPassResponse((int)remaining): newBlockResponse();
+        return hasPassed ? newPassResponse((int) remaining) : newBlockResponse();
     }
 
     private static TokenResult newPassResponse(int remaining) {
         return new TokenResult(TokenResultStatus.OK)
-            .setRemaining(remaining)
-            .setWaitInMs(0);
+                .setRemaining(remaining)
+                .setWaitInMs(0);
     }
 
     private static TokenResult newBlockResponse() {
         return new TokenResult(TokenResultStatus.BLOCKED)
-            .setRemaining(0)
-            .setWaitInMs(0);
+                .setRemaining(0)
+                .setWaitInMs(0);
     }
 
     private static double calcGlobalThreshold(ParamFlowRule rule, Object value) {
@@ -119,5 +119,6 @@ public final class ClusterParamFlowChecker {
         }
     }
 
-    private ClusterParamFlowChecker() {}
+    private ClusterParamFlowChecker() {
+    }
 }

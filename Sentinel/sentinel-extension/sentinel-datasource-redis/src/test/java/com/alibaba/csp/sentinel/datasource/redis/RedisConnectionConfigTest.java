@@ -42,8 +42,8 @@ public class RedisConnectionConfigTest {
         String host = "localhost";
         String clientName = "clientName";
         RedisConnectionConfig redisConnectionConfig = RedisConnectionConfig.Builder.redis(host)
-            .withClientName("clientName")
-            .build();
+                .withClientName("clientName")
+                .build();
         Assert.assertEquals(redisConnectionConfig.getClientName(), clientName);
     }
 
@@ -52,8 +52,8 @@ public class RedisConnectionConfigTest {
         String host = "localhost";
         long timeout = 70 * 1000;
         RedisConnectionConfig redisConnectionConfig = RedisConnectionConfig.Builder.redis(host)
-            .withTimeout(timeout)
-            .build();
+                .withTimeout(timeout)
+                .build();
         Assert.assertEquals(redisConnectionConfig.getTimeout(), timeout);
     }
 
@@ -61,12 +61,12 @@ public class RedisConnectionConfigTest {
     public void testRedisSentinelDefaultPortSuccess() {
         String host = "localhost";
         RedisConnectionConfig redisConnectionConfig = RedisConnectionConfig.Builder.redisSentinel(host)
-            .withPassword("211233")
-            .build();
+                .withPassword("211233")
+                .build();
         Assert.assertNull(redisConnectionConfig.getHost());
         Assert.assertEquals(1, redisConnectionConfig.getRedisSentinels().size());
         Assert.assertEquals(RedisConnectionConfig.DEFAULT_SENTINEL_PORT,
-            redisConnectionConfig.getRedisSentinels().get(0).getPort());
+                redisConnectionConfig.getRedisSentinels().get(0).getPort());
     }
 
     @Test
@@ -75,8 +75,8 @@ public class RedisConnectionConfigTest {
         String host2 = "server2";
         int port2 = 1879;
         RedisConnectionConfig redisConnectionConfig = RedisConnectionConfig.Builder.redisSentinel(host)
-            .withRedisSentinel(host2, port2)
-            .build();
+                .withRedisSentinel(host2, port2)
+                .build();
         Assert.assertNull(redisConnectionConfig.getHost());
         Assert.assertEquals(2, redisConnectionConfig.getRedisSentinels().size());
     }
@@ -87,10 +87,10 @@ public class RedisConnectionConfigTest {
         String host2 = "server2";
         int port2 = 1879;
         RedisConnectionConfig redisConnectionConfig = RedisConnectionConfig.Builder.redisSentinel(host)
-            .withRedisSentinel(host2, port2)
-            .withRedisSentinel(host2, port2)
-            .withPassword("211233")
-            .build();
+                .withRedisSentinel(host2, port2)
+                .withRedisSentinel(host2, port2)
+                .withPassword("211233")
+                .build();
         Assert.assertNull(redisConnectionConfig.getHost());
         Assert.assertEquals(3, redisConnectionConfig.getRedisSentinels().size());
     }

@@ -22,7 +22,7 @@ import com.alibaba.csp.sentinel.util.TimeUtil;
  * In short, {@link RuleConstant#CONTROL_BEHAVIOR_WARM_UP_RATE_LIMITER} behaves like
  * {@link RuleConstant#CONTROL_BEHAVIOR_WARM_UP} + {@link RuleConstant#CONTROL_BEHAVIOR_RATE_LIMITER}.
  * </p>
- *
+ * <p>
  * <p/>
  * Run this demo, results are as follows:
  * <pre>
@@ -197,8 +197,8 @@ public class WarmUpRateLimiterFlowDemo {
                 oldBlock = globalBlock;
 
                 System.out.println(TimeUtil.currentTimeMillis() + ", total:" + oneSecondTotal
-                    + ", pass:" + oneSecondPass
-                    + ", block:" + oneSecondBlock);
+                        + ", pass:" + oneSecondPass
+                        + ", block:" + oneSecondBlock);
                 if (seconds-- <= 0) {
                     stop = true;
                 }
@@ -207,7 +207,7 @@ public class WarmUpRateLimiterFlowDemo {
             long cost = System.currentTimeMillis() - start;
             System.out.println("time cost: " + cost + " ms");
             System.out.println("total:" + total.get() + ", pass:" + pass.get()
-                + ", block:" + block.get());
+                    + ", block:" + block.get());
             System.exit(0);
         }
     }

@@ -105,8 +105,8 @@ public class FlowRuleCheckerTest {
         Context context = mock(Context.class);
 
         FlowRule rule = new FlowRule("testSelectNodeForEmptyReference")
-            .setCount(1)
-            .setStrategy(RuleConstant.STRATEGY_CHAIN);
+                .setCount(1)
+                .setStrategy(RuleConstant.STRATEGY_CHAIN);
         assertNull(FlowRuleChecker.selectReferenceNode(rule, context, node));
     }
 
@@ -120,9 +120,9 @@ public class FlowRuleCheckerTest {
         Context context = mock(Context.class);
 
         FlowRule rule = new FlowRule("testSelectNodeForRelateReference")
-            .setCount(1)
-            .setStrategy(RuleConstant.STRATEGY_RELATE)
-            .setRefResource(refResource);
+                .setCount(1)
+                .setStrategy(RuleConstant.STRATEGY_RELATE)
+                .setRefResource(refResource);
         assertEquals(refCn, FlowRuleChecker.selectReferenceNode(rule, context, node));
     }
 
@@ -134,9 +134,9 @@ public class FlowRuleCheckerTest {
         Context context = mock(Context.class);
 
         FlowRule rule = new FlowRule("testSelectReferenceNodeForContextEntrance")
-            .setCount(1)
-            .setStrategy(RuleConstant.STRATEGY_CHAIN)
-            .setRefResource(contextName);
+                .setCount(1)
+                .setStrategy(RuleConstant.STRATEGY_CHAIN)
+                .setRefResource(contextName);
 
         when(context.getName()).thenReturn(contextName);
         assertEquals(node, FlowRuleChecker.selectReferenceNode(rule, context, node));

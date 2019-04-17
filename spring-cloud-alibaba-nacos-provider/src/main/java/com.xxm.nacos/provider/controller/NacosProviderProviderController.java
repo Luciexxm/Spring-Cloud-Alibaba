@@ -14,7 +14,7 @@ public class NacosProviderProviderController {
 
 
     @GetMapping(value = "/hi")
-    public String sayhi(){
-        return "Hello  "+applicationContext.getEnvironment().getProperty("user.name");
+    public String sayhi() {
+        return "Hello  " + applicationContext.getEnvironment().getProperty("user.name");
     }
 }

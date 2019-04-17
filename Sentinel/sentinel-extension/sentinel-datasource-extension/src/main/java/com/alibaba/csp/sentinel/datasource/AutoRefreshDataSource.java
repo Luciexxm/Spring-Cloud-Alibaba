@@ -51,7 +51,7 @@ public abstract class AutoRefreshDataSource<S, T> extends AbstractDataSource<S, 
     @SuppressWarnings("PMD.ThreadPoolCreationRule")
     private void startTimerService() {
         service = Executors.newScheduledThreadPool(1,
-            new NamedThreadFactory("sentinel-datasource-auto-refresh-task", true));
+                new NamedThreadFactory("sentinel-datasource-auto-refresh-task", true));
         service.scheduleAtFixedRate(new Runnable() {
             @Override
             public void run() {

@@ -33,12 +33,12 @@ class StatLogController {
     private static final int STAT_ENTRY_COOL_DOWN_MILLIS = 200;
 
     private static final ScheduledThreadPoolExecutor rollerThreadPool =
-        new ScheduledThreadPoolExecutor(1, new NamedThreadFactory(
-            "EagleEye-StatLogController-roller", true));
+            new ScheduledThreadPoolExecutor(1, new NamedThreadFactory(
+                    "EagleEye-StatLogController-roller", true));
 
     private static final ScheduledThreadPoolExecutor writerThreadPool =
-        new ScheduledThreadPoolExecutor(1, new NamedThreadFactory(
-            "EagleEye-StatLogController-writer", true));
+            new ScheduledThreadPoolExecutor(1, new NamedThreadFactory(
+                    "EagleEye-StatLogController-writer", true));
 
     private static AtomicBoolean running = new AtomicBoolean(false);
 
@@ -55,7 +55,7 @@ class StatLogController {
 
                     scheduleNextRollingTask(statLogger);
                     EagleEye.selfLog("[INFO] created statLogger[" + statLogger.getLoggerName() +
-                        "]: " + statLogger.getAppender());
+                            "]: " + statLogger.getAppender());
                 }
             }
         }
@@ -80,7 +80,7 @@ class StatLogController {
             rollerThreadPool.schedule(rollingTask, delayMillis, TimeUnit.MILLISECONDS);
         } else if (-delayMillis > statLogger.getIntervalMillis()) {
             EagleEye.selfLog("[WARN] unusual delay of statLogger[" + statLogger.getLoggerName() +
-                "], delay=" + (-delayMillis) + "ms, submit now");
+                    "], delay=" + (-delayMillis) + "ms, submit now");
             rollerThreadPool.submit(rollingTask);
         } else {
             rollerThreadPool.submit(rollingTask);
@@ -94,7 +94,7 @@ class StatLogController {
                 writerThreadPool.schedule(task, STAT_ENTRY_COOL_DOWN_MILLIS, TimeUnit.MILLISECONDS);
             } catch (Throwable t) {
                 EagleEye.selfLog("[ERROR] fail to roll statLogger[" +
-                    statRollingData.getStatLogger().getLoggerName() + "]", t);
+                        statRollingData.getStatLogger().getLoggerName() + "]", t);
             }
         }
     }
@@ -153,7 +153,7 @@ class StatLogController {
                 appender.flush();
             } catch (Throwable t) {
                 EagleEye.selfLog("[WARN] fail to write statLogger[" +
-                    logger.getLoggerName() + "]", t);
+                        logger.getLoggerName() + "]", t);
             }
         }
     }

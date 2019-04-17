@@ -35,9 +35,9 @@ public final class DubboUtils {
     public static String getResourceName(Invoker<?> invoker, Invocation invocation) {
         StringBuilder buf = new StringBuilder(64);
         buf.append(invoker.getInterface().getName())
-            .append(":")
-            .append(invocation.getMethodName())
-            .append("(");
+                .append(":")
+                .append(invocation.getMethodName())
+                .append("(");
         boolean isFirst = true;
         for (Class<?> clazz : invocation.getParameterTypes()) {
             if (!isFirst) {
@@ -50,5 +50,6 @@ public final class DubboUtils {
         return buf.toString();
     }
 
-    private DubboUtils() {}
+    private DubboUtils() {
+    }
 }

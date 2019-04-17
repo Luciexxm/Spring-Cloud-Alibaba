@@ -27,7 +27,7 @@ import static org.junit.Assert.*;
  * @author Eric Zhao
  */
 public class LeapArrayTest extends AbstractTimeBasedTest {
-    
+
     @Test
     public void testGetValidHead() {
         int windowLengthInMs = 100;
@@ -46,7 +46,7 @@ public class LeapArrayTest extends AbstractTimeBasedTest {
                 return windowWrap;
             }
         };
-        
+
         WindowWrap<AtomicInteger> expected1 = leapArray.currentWindow();
         expected1.value().addAndGet(1);
         sleep(windowLengthInMs);

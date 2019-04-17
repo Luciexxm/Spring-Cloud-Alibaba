@@ -104,16 +104,30 @@ public class ClusterFlowConfig {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) { return true; }
-        if (o == null || getClass() != o.getClass()) { return false; }
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
 
-        ClusterFlowConfig that = (ClusterFlowConfig)o;
+        ClusterFlowConfig that = (ClusterFlowConfig) o;
 
-        if (thresholdType != that.thresholdType) { return false; }
-        if (fallbackToLocalWhenFail != that.fallbackToLocalWhenFail) { return false; }
-        if (strategy != that.strategy) { return false; }
-        if (sampleCount != that.sampleCount) { return false; }
-        if (windowIntervalMs != that.windowIntervalMs) { return false; }
+        if (thresholdType != that.thresholdType) {
+            return false;
+        }
+        if (fallbackToLocalWhenFail != that.fallbackToLocalWhenFail) {
+            return false;
+        }
+        if (strategy != that.strategy) {
+            return false;
+        }
+        if (sampleCount != that.sampleCount) {
+            return false;
+        }
+        if (windowIntervalMs != that.windowIntervalMs) {
+            return false;
+        }
         return flowId != null ? flowId.equals(that.flowId) : that.flowId == null;
     }
 
@@ -131,12 +145,12 @@ public class ClusterFlowConfig {
     @Override
     public String toString() {
         return "ClusterFlowConfig{" +
-            "flowId=" + flowId +
-            ", thresholdType=" + thresholdType +
-            ", fallbackToLocalWhenFail=" + fallbackToLocalWhenFail +
-            ", strategy=" + strategy +
-            ", sampleCount=" + sampleCount +
-            ", windowIntervalMs=" + windowIntervalMs +
-            '}';
+                "flowId=" + flowId +
+                ", thresholdType=" + thresholdType +
+                ", fallbackToLocalWhenFail=" + fallbackToLocalWhenFail +
+                ", strategy=" + strategy +
+                ", sampleCount=" + sampleCount +
+                ", windowIntervalMs=" + windowIntervalMs +
+                '}';
     }
 }

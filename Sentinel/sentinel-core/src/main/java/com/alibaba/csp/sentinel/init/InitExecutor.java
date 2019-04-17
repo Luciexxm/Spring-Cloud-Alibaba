@@ -34,7 +34,7 @@ public final class InitExecutor {
     /**
      * If one {@link InitFunc} throws an exception, the init process
      * will immediately be interrupted and the application will exit.
-     *
+     * <p>
      * The initialization will be executed only once.
      */
     public static void doInit() {
@@ -51,7 +51,7 @@ public final class InitExecutor {
             for (OrderWrapper w : initList) {
                 w.func.init();
                 RecordLog.info(String.format("[InitExecutor] Executing %s with order %d",
-                    w.func.getClass().getCanonicalName(), w.order));
+                        w.func.getClass().getCanonicalName(), w.order));
             }
         } catch (Exception ex) {
             RecordLog.warn("[InitExecutor] WARN: Initialization failed", ex);
@@ -81,7 +81,8 @@ public final class InitExecutor {
         }
     }
 
-    private InitExecutor() {}
+    private InitExecutor() {
+    }
 
     private static class OrderWrapper {
         private final int order;

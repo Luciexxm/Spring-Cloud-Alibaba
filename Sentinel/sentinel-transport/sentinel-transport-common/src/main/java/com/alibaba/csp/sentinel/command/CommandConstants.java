@@ -29,5 +29,6 @@ public final class CommandConstants {
     public static final String MSG_SUCCESS = "success";
     public static final String MSG_FAIL = "failed";
 
-    private CommandConstants() {}
+    private CommandConstants() {
+    }
 }

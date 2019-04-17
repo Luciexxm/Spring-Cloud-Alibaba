@@ -68,5 +68,6 @@ public final class ReactorSphU {
         });
     }
 
-    private ReactorSphU() {}
+    private ReactorSphU() {
+    }
 }

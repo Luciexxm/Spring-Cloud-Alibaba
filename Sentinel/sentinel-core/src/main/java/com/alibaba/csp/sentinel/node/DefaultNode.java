@@ -91,7 +91,7 @@ public class DefaultNode extends StatisticNode {
                     childList = newSet;
                 }
             }
-            RecordLog.info("Add child <{0}> to node <{1}>", ((DefaultNode)node).id.getName(), id.getName());
+            RecordLog.info("Add child <{0}> to node <{1}>", ((DefaultNode) node).id.getName(), id.getName());
         }
     }
 
@@ -152,17 +152,17 @@ public class DefaultNode extends StatisticNode {
         }
         if (!(node instanceof EntranceNode)) {
             System.out.println(
-                String.format("%s(thread:%s pq:%s bq:%s tq:%s rt:%s 1mp:%s 1mb:%s 1mt:%s)", node.id.getShowName(),
-                    node.curThreadNum(), node.passQps(), node.blockQps(), node.totalQps(), node.avgRt(),
-                    node.totalRequest() - node.blockRequest(), node.blockRequest(), node.totalRequest()));
+                    String.format("%s(thread:%s pq:%s bq:%s tq:%s rt:%s 1mp:%s 1mb:%s 1mt:%s)", node.id.getShowName(),
+                            node.curThreadNum(), node.passQps(), node.blockQps(), node.totalQps(), node.avgRt(),
+                            node.totalRequest() - node.blockRequest(), node.blockRequest(), node.totalRequest()));
         } else {
             System.out.println(
-                String.format("Entry-%s(t:%s pq:%s bq:%s tq:%s rt:%s 1mp:%s 1mb:%s 1mt:%s)", node.id.getShowName(),
-                    node.curThreadNum(), node.passQps(), node.blockQps(), node.totalQps(), node.avgRt(),
-                    node.totalRequest() - node.blockRequest(), node.blockRequest(), node.totalRequest()));
+                    String.format("Entry-%s(t:%s pq:%s bq:%s tq:%s rt:%s 1mp:%s 1mb:%s 1mt:%s)", node.id.getShowName(),
+                            node.curThreadNum(), node.passQps(), node.blockQps(), node.totalQps(), node.avgRt(),
+                            node.totalRequest() - node.blockRequest(), node.blockRequest(), node.totalRequest()));
         }
         for (Node n : node.getChildList()) {
-            DefaultNode dn = (DefaultNode)n;
+            DefaultNode dn = (DefaultNode) n;
             visitTree(level + 1, dn);
         }
     }

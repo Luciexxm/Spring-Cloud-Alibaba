@@ -36,7 +36,7 @@ public class SphOTest {
         if (SphO.entry("resourceName")) {
             try {
                 assertTrue(StringUtil.equalsIgnoreCase(
-                    ContextUtil.getContext().getCurEntry().getResourceWrapper().getName(), "resourceName"));
+                        ContextUtil.getContext().getCurEntry().getResourceWrapper().getName(), "resourceName"));
             } finally {
                 SphO.exit();
             }
@@ -49,8 +49,8 @@ public class SphOTest {
         if (SphO.entry(method)) {
             try {
                 assertTrue(StringUtil.equalsIgnoreCase(
-                    ContextUtil.getContext().getCurEntry().getResourceWrapper().getName(),
-                    "com.alibaba.csp.sentinel.SphOTest:testMethodEntryNormal()"));
+                        ContextUtil.getContext().getCurEntry().getResourceWrapper().getName(),
+                        "com.alibaba.csp.sentinel.SphOTest:testMethodEntryNormal()"));
             } finally {
                 SphO.exit();
             }
@@ -62,7 +62,7 @@ public class SphOTest {
         if (SphO.entry("resourceName", 2)) {
             try {
                 assertTrue(StringUtil.equalsIgnoreCase(
-                    ContextUtil.getContext().getCurEntry().getResourceWrapper().getName(), "resourceName"));
+                        ContextUtil.getContext().getCurEntry().getResourceWrapper().getName(), "resourceName"));
                 assertSame(ContextUtil.getContext().getCurEntry().getResourceWrapper().getType(), EntryType.OUT);
             } finally {
                 SphO.exit(2);
@@ -76,8 +76,8 @@ public class SphOTest {
         if (SphO.entry(method, 2)) {
             try {
                 assertTrue(StringUtil.equalsIgnoreCase(
-                    ContextUtil.getContext().getCurEntry().getResourceWrapper().getName(),
-                    "com.alibaba.csp.sentinel.SphOTest:testMethodEntryCount()"));
+                        ContextUtil.getContext().getCurEntry().getResourceWrapper().getName(),
+                        "com.alibaba.csp.sentinel.SphOTest:testMethodEntryCount()"));
                 assertSame(ContextUtil.getContext().getCurEntry().getResourceWrapper().getType(), EntryType.OUT);
             } finally {
                 SphO.exit(2);
@@ -90,7 +90,7 @@ public class SphOTest {
         if (SphO.entry("resourceName", EntryType.IN)) {
             try {
                 assertTrue(StringUtil.equalsIgnoreCase(
-                    ContextUtil.getContext().getCurEntry().getResourceWrapper().getName(), "resourceName"));
+                        ContextUtil.getContext().getCurEntry().getResourceWrapper().getName(), "resourceName"));
                 assertSame(ContextUtil.getContext().getCurEntry().getResourceWrapper().getType(), EntryType.IN);
             } finally {
                 SphO.exit();
@@ -104,8 +104,8 @@ public class SphOTest {
         if (SphO.entry(method, EntryType.IN)) {
             try {
                 assertTrue(StringUtil.equalsIgnoreCase(
-                    ContextUtil.getContext().getCurEntry().getResourceWrapper().getName(),
-                    "com.alibaba.csp.sentinel.SphOTest:testMethodEntryType()"));
+                        ContextUtil.getContext().getCurEntry().getResourceWrapper().getName(),
+                        "com.alibaba.csp.sentinel.SphOTest:testMethodEntryType()"));
                 assertSame(ContextUtil.getContext().getCurEntry().getResourceWrapper().getType(), EntryType.IN);
             } finally {
                 SphO.exit();
@@ -118,7 +118,7 @@ public class SphOTest {
         if (SphO.entry("resourceName", EntryType.IN, 2)) {
             try {
                 assertTrue(StringUtil.equalsIgnoreCase(
-                    ContextUtil.getContext().getCurEntry().getResourceWrapper().getName(), "resourceName"));
+                        ContextUtil.getContext().getCurEntry().getResourceWrapper().getName(), "resourceName"));
                 assertSame(ContextUtil.getContext().getCurEntry().getResourceWrapper().getType(), EntryType.IN);
             } finally {
                 SphO.exit(2);
@@ -132,8 +132,8 @@ public class SphOTest {
         if (SphO.entry(method, EntryType.IN, 2)) {
             try {
                 assertTrue(StringUtil.equalsIgnoreCase(
-                    ContextUtil.getContext().getCurEntry().getResourceWrapper().getName(),
-                    "com.alibaba.csp.sentinel.SphOTest:testMethodEntryTypeCount()"));
+                        ContextUtil.getContext().getCurEntry().getResourceWrapper().getName(),
+                        "com.alibaba.csp.sentinel.SphOTest:testMethodEntryTypeCount()"));
                 assertSame(ContextUtil.getContext().getCurEntry().getResourceWrapper().getType(), EntryType.IN);
             } finally {
                 SphO.exit(2);
@@ -146,7 +146,7 @@ public class SphOTest {
         if (SphO.entry("resourceName", EntryType.IN, 2, "hello1", "hello2")) {
             try {
                 assertTrue(StringUtil.equalsIgnoreCase(
-                    ContextUtil.getContext().getCurEntry().getResourceWrapper().getName(), "resourceName"));
+                        ContextUtil.getContext().getCurEntry().getResourceWrapper().getName(), "resourceName"));
                 assertSame(ContextUtil.getContext().getCurEntry().getResourceWrapper().getType(), EntryType.IN);
             } finally {
                 SphO.exit(2, "hello1", "hello2");
@@ -160,8 +160,8 @@ public class SphOTest {
         if (SphO.entry(method, EntryType.IN, 2, "hello1", "hello2")) {
             try {
                 assertTrue(StringUtil.equalsIgnoreCase(
-                    ContextUtil.getContext().getCurEntry().getResourceWrapper().getName(),
-                    "com.alibaba.csp.sentinel.SphOTest:testMethodEntryAll()"));
+                        ContextUtil.getContext().getCurEntry().getResourceWrapper().getName(),
+                        "com.alibaba.csp.sentinel.SphOTest:testMethodEntryAll()"));
                 assertSame(ContextUtil.getContext().getCurEntry().getResourceWrapper().getType(), EntryType.IN);
             } finally {
                 SphO.exit(2, "hello1", "hello2");

@@ -37,8 +37,8 @@ public class FlowRequestDataDecoder implements EntityDecoder<ByteBuf, FlowReques
     public FlowRequestData decode(ByteBuf source) {
         if (source.readableBytes() >= 12) {
             FlowRequestData requestData = new FlowRequestData()
-                .setFlowId(source.readLong())
-                .setCount(source.readInt());
+                    .setFlowId(source.readLong())
+                    .setCount(source.readInt());
             if (source.readableBytes() >= 1) {
                 requestData.setPriority(source.readBoolean());
             }

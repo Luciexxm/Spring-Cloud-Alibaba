@@ -28,7 +28,7 @@ class EagleEyeLogDaemon implements Runnable {
     private static Thread worker = null;
 
     private static final CopyOnWriteArrayList<EagleEyeAppender> watchedAppenders
-        = new CopyOnWriteArrayList<EagleEyeAppender>();
+            = new CopyOnWriteArrayList<EagleEyeAppender>();
 
     static EagleEyeAppender watch(EagleEyeAppender appender) {
         watchedAppenders.addIfAbsent(appender);
@@ -136,5 +136,6 @@ class EagleEyeLogDaemon implements Runnable {
         }
     }
 
-    private EagleEyeLogDaemon() {}
+    private EagleEyeLogDaemon() {
+    }
 }

@@ -82,7 +82,7 @@ public class ConnectionManagerTest {
         ConnectionManager.removeConnection(namespace, address3);
         assertEquals(2, ConnectionManager.getConnectedCount(namespace));
         assertFalse(ConnectionManager.getOrCreateConnectionGroup(namespace).getConnectionSet().contains(
-            new ConnectionDescriptor().setAddress(address3)
+                new ConnectionDescriptor().setAddress(address3)
         ));
     }
 

@@ -34,7 +34,7 @@ import org.apache.dubbo.rpc.RpcException;
 /**
  * <p>Apache Dubbo service provider filter that enables integration with Sentinel. Auto activated by default.</p>
  * <p>Note: this only works for Apache Dubbo 2.7.x or above version.</p>
- *
+ * <p>
  * If you want to disable the provider filter, you can configure:
  * <pre>
  * &lt;dubbo:provider filter="-sentinel.dubbo.provider.filter"/&gt;

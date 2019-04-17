@@ -38,7 +38,7 @@ public class DubboUtilsTest {
         Invocation invocation = mock(Invocation.class);
         when(invocation.getAttachments()).thenReturn(new HashMap<>());
         when(invocation.getAttachment(DubboUtils.SENTINEL_DUBBO_APPLICATION_KEY, ""))
-            .thenReturn("consumerA");
+                .thenReturn("consumerA");
 
         String application = DubboUtils.getApplication(invocation, "");
         verify(invocation).getAttachment(DubboUtils.SENTINEL_DUBBO_APPLICATION_KEY, "");
@@ -51,7 +51,7 @@ public class DubboUtilsTest {
         Invocation invocation = mock(Invocation.class);
         when(invocation.getAttachments()).thenReturn(null);
         when(invocation.getAttachment(DubboUtils.SENTINEL_DUBBO_APPLICATION_KEY, ""))
-            .thenReturn("consumerA");
+                .thenReturn("consumerA");
 
         DubboUtils.getApplication(invocation, "");
 

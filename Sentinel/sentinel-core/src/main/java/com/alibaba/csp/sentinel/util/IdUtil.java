@@ -66,5 +66,6 @@ public final class IdUtil {
         }
     }
 
-    private IdUtil() {}
+    private IdUtil() {
+    }
 }

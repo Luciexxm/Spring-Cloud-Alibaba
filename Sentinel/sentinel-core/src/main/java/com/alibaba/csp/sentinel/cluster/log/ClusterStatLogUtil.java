@@ -36,15 +36,15 @@ public final class ClusterStatLogUtil {
         String path = LogBase.getLogBaseDir() + FILE_NAME;
 
         statLogger = EagleEye.statLoggerBuilder("sentinel-cluster-record")
-            .intervalSeconds(1)
-            .entryDelimiter('|')
-            .keyDelimiter(',')
-            .valueDelimiter(',')
-            .maxEntryCount(5000)
-            .configLogFilePath(path)
-            .maxFileSizeMB(300)
-            .maxBackupIndex(3)
-            .buildSingleton();
+                .intervalSeconds(1)
+                .entryDelimiter('|')
+                .keyDelimiter(',')
+                .valueDelimiter(',')
+                .maxEntryCount(5000)
+                .configLogFilePath(path)
+                .maxFileSizeMB(300)
+                .maxBackupIndex(3)
+                .buildSingleton();
     }
 
     public static void log(String msg) {
@@ -55,5 +55,6 @@ public final class ClusterStatLogUtil {
         statLogger.stat(msg).count(count);
     }
 
-    private ClusterStatLogUtil() {}
+    private ClusterStatLogUtil() {
+    }
 }

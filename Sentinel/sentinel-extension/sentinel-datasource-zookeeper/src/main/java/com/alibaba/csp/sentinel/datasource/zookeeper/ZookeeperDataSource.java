@@ -33,8 +33,8 @@ public class ZookeeperDataSource<T> extends AbstractDataSource<String, T> {
     private static final int SLEEP_TIME = 1000;
 
     private final ExecutorService pool = new ThreadPoolExecutor(1, 1, 0, TimeUnit.MILLISECONDS,
-        new ArrayBlockingQueue<Runnable>(1), new NamedThreadFactory("sentinel-zookeeper-ds-update"),
-        new ThreadPoolExecutor.DiscardOldestPolicy());
+            new ArrayBlockingQueue<Runnable>(1), new NamedThreadFactory("sentinel-zookeeper-ds-update"),
+            new ThreadPoolExecutor.DiscardOldestPolicy());
 
     private NodeCacheListener listener;
     private final String path;

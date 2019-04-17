@@ -65,10 +65,10 @@ public class ConnectionPool {
      */
     private synchronized void startScan() {
         if (scanTaskFuture == null
-            || scanTaskFuture.isCancelled()
-            || scanTaskFuture.isDone()) {
+                || scanTaskFuture.isCancelled()
+                || scanTaskFuture.isDone()) {
             scanTaskFuture = TIMER.scheduleAtFixedRate(
-                new ScanIdleConnectionTask(this), 10, 30, TimeUnit.SECONDS);
+                    new ScanIdleConnectionTask(this), 10, 30, TimeUnit.SECONDS);
         }
     }
 
@@ -79,7 +79,7 @@ public class ConnectionPool {
      * @return formatted key
      */
     private String getConnectionKey(Channel channel) {
-        InetSocketAddress socketAddress = (InetSocketAddress)channel.remoteAddress();
+        InetSocketAddress socketAddress = (InetSocketAddress) channel.remoteAddress();
         String remoteIp = socketAddress.getAddress().getHostAddress();
         int remotePort = socketAddress.getPort();
         return remoteIp + ":" + remotePort;

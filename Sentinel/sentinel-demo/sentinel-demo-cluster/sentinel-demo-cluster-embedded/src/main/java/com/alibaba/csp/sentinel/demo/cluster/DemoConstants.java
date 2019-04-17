@@ -26,5 +26,6 @@ public final class DemoConstants {
     public static final String CLIENT_CONFIG_POSTFIX = "-cc-config";
     public static final String CLUSTER_MAP_POSTFIX = "-cluster-map";
 
-    private DemoConstants() {}
+    private DemoConstants() {
+    }
 }

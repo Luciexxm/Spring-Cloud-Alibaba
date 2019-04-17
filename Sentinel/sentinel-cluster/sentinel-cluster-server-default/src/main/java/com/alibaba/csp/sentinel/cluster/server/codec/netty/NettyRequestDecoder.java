@@ -37,7 +37,7 @@ public class NettyRequestDecoder extends ByteToMessageDecoder {
         RequestEntityDecoder<ByteBuf, Request> requestDecoder = ServerEntityCodecProvider.getRequestEntityDecoder();
         if (requestDecoder == null) {
             RecordLog.warn("[NettyRequestDecoder] Cannot resolve the global request entity decoder, "
-                + "dropping the request");
+                    + "dropping the request");
             return;
         }
 

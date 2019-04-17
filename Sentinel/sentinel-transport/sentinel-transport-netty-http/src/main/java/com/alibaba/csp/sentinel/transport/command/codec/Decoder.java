@@ -45,7 +45,7 @@ public interface Decoder<R> {
     /**
      * Decode the given byte array into an object of type {@code R} with the given charset.
      *
-     * @param bytes raw byte buffer
+     * @param bytes   raw byte buffer
      * @param charset the charset
      * @return the decoded target object
      * @throws Exception error occurs when decoding the object (e.g. IO fails)

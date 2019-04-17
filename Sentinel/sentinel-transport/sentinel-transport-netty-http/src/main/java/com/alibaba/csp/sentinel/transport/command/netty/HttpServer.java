@@ -51,8 +51,8 @@ public final class HttpServer {
         try {
             ServerBootstrap b = new ServerBootstrap();
             b.group(bossGroup, workerGroup)
-                .channel(NioServerSocketChannel.class)
-                .childHandler(new HttpServerInitializer());
+                    .channel(NioServerSocketChannel.class)
+                    .childHandler(new HttpServerInitializer());
             int port;
             try {
                 if (StringUtil.isEmpty(TransportConfig.getPort())) {
@@ -65,7 +65,7 @@ public final class HttpServer {
                 // Will cause the application exit.
                 throw new IllegalArgumentException("Illegal port: " + TransportConfig.getPort());
             }
-            
+
             int retryCount = 0;
             ChannelFuture channelFuture = null;
             // loop for an successful binding
@@ -79,7 +79,7 @@ public final class HttpServer {
                 } catch (Exception e) {
                     TimeUnit.MILLISECONDS.sleep(30);
                     RecordLog.warn("[HttpServer] Netty server bind error, port={0}, retry={1}", newPort, retryCount);
-                    retryCount ++;
+                    retryCount++;
                 }
             }
             channel = channelFuture.channel();
@@ -89,11 +89,11 @@ public final class HttpServer {
             bossGroup.shutdownGracefully();
         }
     }
-    
+
     /**
      * Increase port number every 3 tries.
-     * 
-     * @param basePort base port to start
+     *
+     * @param basePort   base port to start
      * @param retryCount retry count
      * @return next calculated port
      */

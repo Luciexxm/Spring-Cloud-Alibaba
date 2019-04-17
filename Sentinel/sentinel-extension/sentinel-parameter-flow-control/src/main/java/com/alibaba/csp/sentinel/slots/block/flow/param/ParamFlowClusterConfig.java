@@ -90,15 +90,27 @@ public class ParamFlowClusterConfig {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) { return true; }
-        if (o == null || getClass() != o.getClass()) { return false; }
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
 
-        ParamFlowClusterConfig config = (ParamFlowClusterConfig)o;
+        ParamFlowClusterConfig config = (ParamFlowClusterConfig) o;
 
-        if (thresholdType != config.thresholdType) { return false; }
-        if (fallbackToLocalWhenFail != config.fallbackToLocalWhenFail) { return false; }
-        if (sampleCount != config.sampleCount) { return false; }
-        if (windowIntervalMs != config.windowIntervalMs) { return false; }
+        if (thresholdType != config.thresholdType) {
+            return false;
+        }
+        if (fallbackToLocalWhenFail != config.fallbackToLocalWhenFail) {
+            return false;
+        }
+        if (sampleCount != config.sampleCount) {
+            return false;
+        }
+        if (windowIntervalMs != config.windowIntervalMs) {
+            return false;
+        }
         return flowId != null ? flowId.equals(config.flowId) : config.flowId == null;
     }
 
@@ -115,11 +127,11 @@ public class ParamFlowClusterConfig {
     @Override
     public String toString() {
         return "ParamFlowClusterConfig{" +
-            "flowId=" + flowId +
-            ", thresholdType=" + thresholdType +
-            ", fallbackToLocalWhenFail=" + fallbackToLocalWhenFail +
-            ", sampleCount=" + sampleCount +
-            ", windowIntervalMs=" + windowIntervalMs +
-            '}';
+                "flowId=" + flowId +
+                ", thresholdType=" + thresholdType +
+                ", fallbackToLocalWhenFail=" + fallbackToLocalWhenFail +
+                ", sampleCount=" + sampleCount +
+                ", windowIntervalMs=" + windowIntervalMs +
+                '}';
     }
 }

@@ -70,7 +70,7 @@ public class SentinelDubboProviderFilterTest extends BaseTest {
         when(invocation.getMethodName()).thenReturn(method.getName());
         when(invocation.getParameterTypes()).thenReturn(method.getParameterTypes());
         when(invocation.getAttachment(DubboUtils.SENTINEL_DUBBO_APPLICATION_KEY, ""))
-            .thenReturn(originApplication);
+                .thenReturn(originApplication);
 
         final Result result = mock(Result.class);
         when(result.hasException()).thenReturn(false);

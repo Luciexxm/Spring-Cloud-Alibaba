@@ -40,7 +40,7 @@ public class ClusterNodeBuilderTest {
 
         Node curNode = nodeA.getCurNode();
         assertSame(curNode.getClass(), DefaultNode.class);
-        DefaultNode dN = (DefaultNode)curNode;
+        DefaultNode dN = (DefaultNode) curNode;
         assertTrue(dN.getClusterNode().getOriginCountMap().containsKey("caller1"));
         assertSame(nodeA.getOriginNode(), dN.getClusterNode().getOrCreateOriginNode("caller1"));
 
@@ -55,7 +55,7 @@ public class ClusterNodeBuilderTest {
 
         curNode = nodeA.getCurNode();
         assertSame(curNode.getClass(), DefaultNode.class);
-        DefaultNode dN1 = (DefaultNode)curNode;
+        DefaultNode dN1 = (DefaultNode) curNode;
         assertTrue(dN1.getClusterNode().getOriginCountMap().containsKey("caller2"));
         assertNotSame(dN1, dN);
 

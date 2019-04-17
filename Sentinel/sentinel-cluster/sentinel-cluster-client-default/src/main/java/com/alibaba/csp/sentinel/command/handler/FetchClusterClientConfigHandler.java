@@ -35,9 +35,9 @@ public class FetchClusterClientConfigHandler implements CommandHandler<String> {
     @Override
     public CommandResponse<String> handle(CommandRequest request) {
         ClusterClientStateEntity stateVO = new ClusterClientStateEntity()
-            .setServerHost(ClusterClientConfigManager.getServerHost())
-            .setServerPort(ClusterClientConfigManager.getServerPort())
-            .setRequestTimeout(ClusterClientConfigManager.getRequestTimeout());
+                .setServerHost(ClusterClientConfigManager.getServerHost())
+                .setServerPort(ClusterClientConfigManager.getServerPort())
+                .setRequestTimeout(ClusterClientConfigManager.getRequestTimeout());
         if (TokenClientProvider.isClientSpiAvailable()) {
             stateVO.setClientState(TokenClientProvider.getClient().getState());
         } else {

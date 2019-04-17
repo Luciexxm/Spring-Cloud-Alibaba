@@ -38,10 +38,10 @@ import com.alibaba.csp.sentinel.slotchain.ProcessorSlotExitCallback;
 public final class StatisticSlotCallbackRegistry {
 
     private static final Map<String, ProcessorSlotEntryCallback<DefaultNode>> entryCallbackMap
-        = new ConcurrentHashMap<String, ProcessorSlotEntryCallback<DefaultNode>>();
+            = new ConcurrentHashMap<String, ProcessorSlotEntryCallback<DefaultNode>>();
 
     private static final Map<String, ProcessorSlotExitCallback> exitCallbackMap
-        = new ConcurrentHashMap<String, ProcessorSlotExitCallback>();
+            = new ConcurrentHashMap<String, ProcessorSlotExitCallback>();
 
     public static void clearEntryCallback() {
         entryCallbackMap.clear();
@@ -81,5 +81,6 @@ public final class StatisticSlotCallbackRegistry {
         return exitCallbackMap.values();
     }
 
-    private StatisticSlotCallbackRegistry() {}
+    private StatisticSlotCallbackRegistry() {
+    }
 }

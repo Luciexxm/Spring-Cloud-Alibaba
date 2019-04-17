@@ -45,8 +45,8 @@ public class FlowTokenResponseData {
     @Override
     public String toString() {
         return "FlowTokenResponseData{" +
-            "remainingCount=" + remainingCount +
-            ", waitInMs=" + waitInMs +
-            '}';
+                "remainingCount=" + remainingCount +
+                ", waitInMs=" + waitInMs +
+                '}';
     }
 }

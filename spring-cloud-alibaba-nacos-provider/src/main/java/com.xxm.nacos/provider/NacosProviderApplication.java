@@ -12,13 +12,12 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableDiscoveryClient
 public class NacosProviderApplication {
     public static void main(String[] args) {
-        SpringApplication.run(NacosProviderApplication.class,args);
+        SpringApplication.run(NacosProviderApplication.class, args);
     }
 
 
     @Value("${server.port}")
     private String port;
-
 
 
     @RestController

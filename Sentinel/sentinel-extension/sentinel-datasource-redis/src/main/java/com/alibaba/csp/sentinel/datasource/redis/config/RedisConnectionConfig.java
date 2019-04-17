@@ -266,7 +266,7 @@ public class RedisConnectionConfig {
         if (!(o instanceof RedisConnectionConfig)) {
             return false;
         }
-        RedisConnectionConfig redisURI = (RedisConnectionConfig)o;
+        RedisConnectionConfig redisURI = (RedisConnectionConfig) o;
 
         if (port != redisURI.port) {
             return false;
@@ -278,11 +278,11 @@ public class RedisConnectionConfig {
             return false;
         }
         if (redisSentinelMasterId != null ? !redisSentinelMasterId.equals(redisURI.redisSentinelMasterId)
-            : redisURI.redisSentinelMasterId != null) {
+                : redisURI.redisSentinelMasterId != null) {
             return false;
         }
         return !(redisSentinels != null ? !redisSentinels.equals(redisURI.redisSentinels)
-            : redisURI.redisSentinels != null);
+                : redisURI.redisSentinels != null);
 
     }
 
@@ -433,7 +433,7 @@ public class RedisConnectionConfig {
         public RedisConnectionConfig.Builder withHost(String host) {
 
             AssertUtil.assertState(this.redisSentinels.isEmpty(),
-                "Sentinels are non-empty. Cannot use in Sentinel mode.");
+                    "Sentinels are non-empty. Cannot use in Sentinel mode.");
             AssertUtil.notEmpty(host, "Host must not be empty");
 
             this.host = host;
@@ -546,8 +546,8 @@ public class RedisConnectionConfig {
 
             if (redisSentinels.isEmpty() && StringUtil.isEmpty(host)) {
                 throw new IllegalStateException(
-                    "Cannot build a RedisConnectionConfig. One of the following must be provided Host, Socket or "
-                        + "Sentinel");
+                        "Cannot build a RedisConnectionConfig. One of the following must be provided Host, Socket or "
+                                + "Sentinel");
             }
 
             RedisConnectionConfig redisURI = new RedisConnectionConfig();
@@ -565,7 +565,7 @@ public class RedisConnectionConfig {
 
             for (RedisHostAndPort sentinel : redisSentinels) {
                 redisURI.getRedisSentinels().add(
-                    new RedisConnectionConfig(sentinel.getHost(), sentinel.getPort(), timeout));
+                        new RedisConnectionConfig(sentinel.getHost(), sentinel.getPort(), timeout));
             }
 
             redisURI.setTimeout(timeout);

@@ -54,9 +54,9 @@ public class ParameterMetric {
     }
 
     private Map<Integer, HotParameterLeapArray> rollingParameters =
-        new ConcurrentHashMap<Integer, HotParameterLeapArray>();
+            new ConcurrentHashMap<Integer, HotParameterLeapArray>();
     private Map<Integer, CacheMap<Object, AtomicInteger>> threadCountMap =
-        new ConcurrentHashMap<Integer, CacheMap<Object, AtomicInteger>>();
+            new ConcurrentHashMap<Integer, CacheMap<Object, AtomicInteger>>();
 
     public Map<Integer, HotParameterLeapArray> getRollingParameters() {
         return rollingParameters;
@@ -81,7 +81,7 @@ public class ParameterMetric {
 
                 if (threadCountMap.get(index) == null) {
                     threadCountMap.put(index,
-                        new ConcurrentLinkedHashMapWrapper<Object, AtomicInteger>(THREAD_COUNT_MAX_CAPACITY));
+                            new ConcurrentLinkedHashMapWrapper<Object, AtomicInteger>(THREAD_COUNT_MAX_CAPACITY));
                 }
             }
         }
@@ -106,7 +106,7 @@ public class ParameterMetric {
                 }
                 if (Collection.class.isAssignableFrom(arg.getClass())) {
 
-                    for (Object value : ((Collection)arg)) {
+                    for (Object value : ((Collection) arg)) {
                         AtomicInteger oldValue = threadCount.putIfAbsent(value, new AtomicInteger());
                         if (oldValue != null) {
                             int currentValue = oldValue.decrementAndGet();
@@ -166,7 +166,7 @@ public class ParameterMetric {
                 }
 
                 if (Collection.class.isAssignableFrom(arg.getClass())) {
-                    for (Object value : ((Collection)arg)) {
+                    for (Object value : ((Collection) arg)) {
                         AtomicInteger oldValue = threadCount.putIfAbsent(value, new AtomicInteger());
                         if (oldValue != null) {
                             oldValue.incrementAndGet();
@@ -229,7 +229,7 @@ public class ParameterMetric {
                     continue;
                 }
                 if (Collection.class.isAssignableFrom(arg.getClass())) {
-                    for (Object value : ((Collection)arg)) {
+                    for (Object value : ((Collection) arg)) {
                         param.addValue(event, count, value);
                     }
                 } else if (arg.getClass().isArray()) {
@@ -269,7 +269,7 @@ public class ParameterMetric {
                 return -1;
             }
 
-            return (long)rollingParameters.get(index).getRollingAvg(RollingParamEvent.REQUEST_BLOCKED, value);
+            return (long) rollingParameters.get(index).getRollingAvg(RollingParamEvent.REQUEST_BLOCKED, value);
         } catch (Throwable e) {
             RecordLog.info(e.getMessage(), e);
         }

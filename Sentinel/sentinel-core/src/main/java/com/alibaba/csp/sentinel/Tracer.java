@@ -54,7 +54,7 @@ public final class Tracer {
             return;
         }
 
-        DefaultNode curNode = (DefaultNode)context.getCurNode();
+        DefaultNode curNode = (DefaultNode) context.getCurNode();
         traceExceptionToNode(e, count, curNode);
     }
 
@@ -73,7 +73,7 @@ public final class Tracer {
             return;
         }
 
-        DefaultNode curNode = (DefaultNode)context.getCurNode();
+        DefaultNode curNode = (DefaultNode) context.getCurNode();
         traceExceptionToNode(e, count, curNode);
     }
 
@@ -102,7 +102,7 @@ public final class Tracer {
             return;
         }
 
-        DefaultNode curNode = (DefaultNode)entry.getCurNode();
+        DefaultNode curNode = (DefaultNode) entry.getCurNode();
         traceExceptionToNode(e, count, curNode);
     }
 
@@ -119,5 +119,6 @@ public final class Tracer {
         clusterNode.trace(t, count);
     }
 
-    private Tracer() {}
+    private Tracer() {
+    }
 }

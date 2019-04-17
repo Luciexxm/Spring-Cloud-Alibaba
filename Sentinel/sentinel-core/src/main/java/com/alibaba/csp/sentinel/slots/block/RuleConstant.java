@@ -54,5 +54,6 @@ public final class RuleConstant {
     public static final int DEFAULT_SAMPLE_COUNT = 2;
     public static final int DEFAULT_WINDOW_INTERVAL_MS = 1000;
 
-    private RuleConstant() {}
+    private RuleConstant() {
+    }
 }

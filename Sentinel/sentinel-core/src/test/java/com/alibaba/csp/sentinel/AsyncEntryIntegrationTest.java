@@ -180,12 +180,12 @@ public class AsyncEntryIntegrationTest {
         // we keep the original timeout of 15 seconds although the test should
         // complete in less than 3 seconds
         await().timeout(15, TimeUnit.SECONDS)
-            .until(new Callable<DefaultNode>() {
-                @Override
-                public DefaultNode call() throws Exception {
-                    return queryInvocationTree(false);
-                }
-            }, CoreMatchers.notNullValue());
+                .until(new Callable<DefaultNode>() {
+                    @Override
+                    public DefaultNode call() throws Exception {
+                        return queryInvocationTree(false);
+                    }
+                }, CoreMatchers.notNullValue());
 
         queryInvocationTree(true);
     }
@@ -228,7 +228,7 @@ public class AsyncEntryIntegrationTest {
 
         if (check) {
             fail(String.format("The given node <%s> does not have child for resource <%s>",
-                root.getId().getName(), resourceName));
+                    root.getId().getName(), resourceName));
         }
         return null;
     }

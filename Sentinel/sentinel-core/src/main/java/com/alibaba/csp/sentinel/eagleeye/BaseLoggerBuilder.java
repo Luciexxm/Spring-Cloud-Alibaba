@@ -50,14 +50,14 @@ class BaseLoggerBuilder<T extends BaseLoggerBuilder<T>> {
             filePathToConfig = basePath + filePathToConfig;
         }
         this.filePath = filePathToConfig;
-        return (T)this;
+        return (T) this;
     }
 
     @SuppressWarnings("unchecked")
     public T configLogFilePath(String filePath) {
         EagleEyeCoreUtils.checkNotNullEmpty(filePath, "filePath");
         this.filePath = filePath;
-        return (T)this;
+        return (T) this;
     }
 
     @SuppressWarnings("unchecked")
@@ -66,7 +66,7 @@ class BaseLoggerBuilder<T extends BaseLoggerBuilder<T>> {
             throw new IllegalArgumentException("Invalid maxFileSizeMB");
         }
         this.maxFileSize = maxFileSizeMB * 1024 * 1024;
-        return (T)this;
+        return (T) this;
     }
 
     @SuppressWarnings("unchecked")
@@ -75,13 +75,13 @@ class BaseLoggerBuilder<T extends BaseLoggerBuilder<T>> {
             throw new IllegalArgumentException("");
         }
         this.maxBackupIndex = maxBackupIndex;
-        return (T)this;
+        return (T) this;
     }
 
     @SuppressWarnings("unchecked")
     public T entryDelimiter(char entryDelimiter) {
         this.entryDelimiter = entryDelimiter;
-        return (T)this;
+        return (T) this;
     }
 
     String getLoggerName() {

@@ -53,8 +53,9 @@ public final class ConfigSupplierRegistry {
         AssertUtil.notNull(namespaceSupplier, "namespaceSupplier cannot be null");
         ConfigSupplierRegistry.namespaceSupplier = namespaceSupplier;
         RecordLog.info("[ConfigSupplierRegistry] New namespace supplier provided, current supplied: "
-            + namespaceSupplier.get());
+                + namespaceSupplier.get());
     }
 
-    private ConfigSupplierRegistry() {}
+    private ConfigSupplierRegistry() {
+    }
 }

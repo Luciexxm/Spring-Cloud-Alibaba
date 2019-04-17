@@ -73,8 +73,8 @@ public class HotParameterLeapArrayTest {
 
         Map<Object, Double> top2Values = leapArray.getTopValues(RollingParamEvent.REQUEST_PASSED, a1 - 1);
         // Top 2 should be 5 and 3
-        assertEquals((double)5 * 10 / intervalInSec, top2Values.get(paramPrefix + 5), 0.01);
-        assertEquals((double)3 * 20 / intervalInSec, top2Values.get(paramPrefix + 3), 0.01);
+        assertEquals((double) 5 * 10 / intervalInSec, top2Values.get(paramPrefix + 5), 0.01);
+        assertEquals((double) 3 * 20 / intervalInSec, top2Values.get(paramPrefix + 3), 0.01);
 
         Map<Object, Double> top4Values = leapArray.getTopValues(RollingParamEvent.REQUEST_PASSED, a2 - 1);
         assertEquals(a2 - 1, top4Values.size());
@@ -104,12 +104,15 @@ public class HotParameterLeapArrayTest {
         int p2a = 6, p2c = 17;
         RollingParamEvent passEvent = RollingParamEvent.REQUEST_PASSED;
         final ParamMapBucket b1 = new ParamMapBucket()
-            .add(passEvent, p1a, v1)
-            .add(passEvent, p1b, v2);
+                .add(passEvent, p1a, v1)
+                .add(passEvent, p1b, v2);
         final ParamMapBucket b2 = new ParamMapBucket()
-            .add(passEvent, p2a, v1)
-            .add(passEvent, p2c, v3);
-        List<ParamMapBucket> buckets = new ArrayList<ParamMapBucket>() {{ add(b1); add(b2); }};
+                .add(passEvent, p2a, v1)
+                .add(passEvent, p2c, v3);
+        List<ParamMapBucket> buckets = new ArrayList<ParamMapBucket>() {{
+            add(b1);
+            add(b2);
+        }};
         when(leapArray.values()).thenReturn(buckets);
         when(leapArray.getRollingSum(any(RollingParamEvent.class), any(Object.class))).thenCallRealMethod();
 
@@ -123,7 +126,7 @@ public class HotParameterLeapArrayTest {
         HotParameterLeapArray leapArray = mock(HotParameterLeapArray.class);
         when(leapArray.getRollingSum(any(RollingParamEvent.class), any(Object.class))).thenReturn(15L);
         when(leapArray.getIntervalInSecond()).thenReturn(1d)
-            .thenReturn(2d);
+                .thenReturn(2d);
         when(leapArray.getRollingAvg(any(RollingParamEvent.class), any(Object.class))).thenCallRealMethod();
 
         assertEquals(15.0d, leapArray.getRollingAvg(RollingParamEvent.REQUEST_PASSED, "abc"), 0.001);

@@ -45,7 +45,7 @@ public class ModifyClusterServerTransportConfigHandler implements CommandHandler
             int idleSeconds = Integer.valueOf(idleSecondsValue);
 
             ClusterServerConfigManager.loadGlobalTransportConfig(new ServerTransportConfig()
-                .setPort(port).setIdleSeconds(idleSeconds));
+                    .setPort(port).setIdleSeconds(idleSeconds));
             return CommandResponse.ofSuccess("success");
         } catch (NumberFormatException e) {
             return CommandResponse.ofFailure(new IllegalArgumentException("invalid parameter"));

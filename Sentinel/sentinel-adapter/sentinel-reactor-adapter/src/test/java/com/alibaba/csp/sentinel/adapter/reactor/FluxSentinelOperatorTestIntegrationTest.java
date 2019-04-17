@@ -24,11 +24,11 @@ public class FluxSentinelOperatorTestIntegrationTest {
     public void testEmitMultipleValueSuccess() {
         String resourceName = createResourceName("testEmitMultipleSuccess");
         StepVerifier.create(Flux.just(1, 2)
-            .map(e -> e * 2)
-            .transform(new SentinelReactorTransformer<>(resourceName)))
-            .expectNext(2)
-            .expectNext(4)
-            .verifyComplete();
+                .map(e -> e * 2)
+                .transform(new SentinelReactorTransformer<>(resourceName)))
+                .expectNext(2)
+                .expectNext(4)
+                .verifyComplete();
 
         ClusterNode cn = ClusterBuilderSlot.getClusterNode(resourceName);
         assertNotNull(cn);
@@ -39,9 +39,9 @@ public class FluxSentinelOperatorTestIntegrationTest {
     public void testEmitFluxError() {
         String resourceName = createResourceName("testEmitFluxError");
         StepVerifier.create(Flux.error(new IllegalAccessException("oops"))
-            .transform(new SentinelReactorTransformer<>(resourceName)))
-            .expectError(IllegalAccessException.class)
-            .verify();
+                .transform(new SentinelReactorTransformer<>(resourceName)))
+                .expectError(IllegalAccessException.class)
+                .verify();
 
         ClusterNode cn = ClusterBuilderSlot.getClusterNode(resourceName);
         assertNotNull(cn);
@@ -53,13 +53,13 @@ public class FluxSentinelOperatorTestIntegrationTest {
     public void testEmitMultipleValuesWhenFlowControlTriggered() {
         String resourceName = createResourceName("testEmitMultipleValuesWhenFlowControlTriggered");
         FlowRuleManager.loadRules(Collections.singletonList(
-            new FlowRule(resourceName).setCount(0)
+                new FlowRule(resourceName).setCount(0)
         ));
         StepVerifier.create(Flux.just(1, 3, 5)
-            .map(e -> e * 2)
-            .transform(new SentinelReactorTransformer<>(resourceName)))
-            .expectError(BlockException.class)
-            .verify();
+                .map(e -> e * 2)
+                .transform(new SentinelReactorTransformer<>(resourceName)))
+                .expectError(BlockException.class)
+                .verify();
 
         ClusterNode cn = ClusterBuilderSlot.getClusterNode(resourceName);
         assertNotNull(cn);

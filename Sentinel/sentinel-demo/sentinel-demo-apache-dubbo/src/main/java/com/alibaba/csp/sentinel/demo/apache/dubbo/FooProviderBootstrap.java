@@ -56,8 +56,8 @@ public class FooProviderBootstrap {
 
     private static void initFlowRule() {
         FlowRule flowRule = new FlowRule(INTERFACE_RES_KEY)
-            .setCount(10)
-            .setGrade(RuleConstant.FLOW_GRADE_QPS);
+                .setCount(10)
+                .setGrade(RuleConstant.FLOW_GRADE_QPS);
         FlowRuleManager.loadRules(Collections.singletonList(flowRule));
     }
 }

@@ -36,7 +36,7 @@ import io.grpc.Status;
 
 /**
  * <p>gRPC client interceptor for Sentinel. Currently it only works with unary methods.</p>
- *
+ * <p>
  * Example code:
  * <pre>
  * public class ServiceClient {
@@ -52,7 +52,7 @@ import io.grpc.Status;
  *
  * }
  * </pre>
- *
+ * <p>
  * For server interceptor, see {@link SentinelGrpcServerInterceptor}.
  *
  * @author Eric Zhao
@@ -60,7 +60,7 @@ import io.grpc.Status;
 public class SentinelGrpcClientInterceptor implements ClientInterceptor {
 
     private static final Status FLOW_CONTROL_BLOCK = Status.UNAVAILABLE.withDescription(
-        "Flow control limit exceeded (client side)");
+            "Flow control limit exceeded (client side)");
 
     @Override
     public <ReqT, RespT> ClientCall<ReqT, RespT> interceptCall(MethodDescriptor<ReqT, RespT> methodDescriptor,
@@ -71,7 +71,7 @@ public class SentinelGrpcClientInterceptor implements ClientInterceptor {
             entry = SphU.entry(resourceName, EntryType.OUT);
             // Allow access, forward the call.
             return new ForwardingClientCall.SimpleForwardingClientCall<ReqT, RespT>(
-                channel.newCall(methodDescriptor, callOptions)) {
+                    channel.newCall(methodDescriptor, callOptions)) {
                 @Override
                 public void start(Listener<RespT> responseListener, Metadata headers) {
                     super.start(new SimpleForwardingClientCallListener<RespT>(responseListener) {

@@ -49,7 +49,7 @@ public final class FilterUtil {
 
         if (lastSlashIndex >= 0) {
             pathInfo = pathInfo.substring(0, lastSlashIndex) + "/"
-                + StringUtil.trim(pathInfo.substring(lastSlashIndex + 1));
+                    + StringUtil.trim(pathInfo.substring(lastSlashIndex + 1));
         } else {
             pathInfo = PATH_SPLIT + StringUtil.trim(pathInfo);
         }
@@ -149,7 +149,7 @@ public final class FilterUtil {
                 continue;
             }
 
-            pathChars[level++] = (char)buf.length();
+            pathChars[level++] = (char) buf.length();
             buf.append(element).append(PATH_SPLIT);
         }
 
@@ -185,5 +185,6 @@ public final class FilterUtil {
 
     public static final String DEFAULT_BLOCK_MSG = "Blocked by Sentinel (flow limiting)";
 
-    private FilterUtil() {}
+    private FilterUtil() {
+    }
 }

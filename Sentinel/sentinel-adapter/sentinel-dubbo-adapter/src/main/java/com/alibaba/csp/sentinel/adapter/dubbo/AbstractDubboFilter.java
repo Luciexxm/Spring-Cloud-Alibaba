@@ -27,9 +27,9 @@ abstract class AbstractDubboFilter implements Filter {
     protected String getResourceName(Invoker<?> invoker, Invocation invocation) {
         StringBuilder buf = new StringBuilder(64);
         buf.append(invoker.getInterface().getName())
-            .append(":")
-            .append(invocation.getMethodName())
-            .append("(");
+                .append(":")
+                .append(invocation.getMethodName())
+                .append("(");
         boolean isFirst = true;
         for (Class<?> clazz : invocation.getParameterTypes()) {
             if (!isFirst) {

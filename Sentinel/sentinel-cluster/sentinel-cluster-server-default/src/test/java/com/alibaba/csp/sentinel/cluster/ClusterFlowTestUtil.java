@@ -50,5 +50,6 @@ public final class ClusterFlowTestUtil {
         }
     }
 
-    private ClusterFlowTestUtil() {}
+    private ClusterFlowTestUtil() {
+    }
 }

@@ -43,19 +43,19 @@ public class DefaultBlockRequestHandler implements BlockRequestHandler {
         }
         // JSON result by default.
         return ServerResponse.status(HttpStatus.TOO_MANY_REQUESTS)
-            .contentType(MediaType.APPLICATION_JSON_UTF8)
-            .body(fromObject(buildErrorResult(ex)));
+                .contentType(MediaType.APPLICATION_JSON_UTF8)
+                .body(fromObject(buildErrorResult(ex)));
     }
 
     private Mono<ServerResponse> htmlErrorResponse(Throwable ex) {
         return ServerResponse.status(HttpStatus.TOO_MANY_REQUESTS)
-            .contentType(MediaType.TEXT_PLAIN)
-            .syncBody(DEFAULT_BLOCK_MSG_PREFIX + ex.getClass().getSimpleName());
+                .contentType(MediaType.TEXT_PLAIN)
+                .syncBody(DEFAULT_BLOCK_MSG_PREFIX + ex.getClass().getSimpleName());
     }
 
     private ErrorResult buildErrorResult(Throwable ex) {
         return new ErrorResult(HttpStatus.TOO_MANY_REQUESTS.value(),
-            DEFAULT_BLOCK_MSG_PREFIX + ex.getClass().getSimpleName());
+                DEFAULT_BLOCK_MSG_PREFIX + ex.getClass().getSimpleName());
     }
 
     /**
@@ -67,7 +67,7 @@ public class DefaultBlockRequestHandler implements BlockRequestHandler {
             acceptedMediaTypes.remove(MediaType.ALL);
             MediaType.sortBySpecificityAndQuality(acceptedMediaTypes);
             return acceptedMediaTypes.stream()
-                .anyMatch(MediaType.TEXT_HTML::isCompatibleWith);
+                    .anyMatch(MediaType.TEXT_HTML::isCompatibleWith);
         } catch (InvalidMediaTypeException ex) {
             return false;
         }

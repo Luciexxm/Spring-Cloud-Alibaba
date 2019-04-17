@@ -68,7 +68,7 @@ public class OccupyTimeoutProperty {
         }
         if (newInterval > IntervalProperty.INTERVAL) {
             RecordLog.warn("[OccupyTimeoutProperty] Illegal timeout value will be ignored: " + occupyTimeout
-                + ", should <= " + IntervalProperty.INTERVAL);
+                    + ", should <= " + IntervalProperty.INTERVAL);
             return;
         }
         if (newInterval != occupyTimeout) {

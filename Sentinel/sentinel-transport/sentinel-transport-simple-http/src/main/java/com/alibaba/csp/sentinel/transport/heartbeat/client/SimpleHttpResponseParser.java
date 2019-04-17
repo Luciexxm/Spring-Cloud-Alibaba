@@ -100,7 +100,7 @@ public class SimpleHttpResponseParser {
                             out.write(buf, parseBg, len - parseBg);
                             if (out.size() > MAX_BODY_SIZE) {
                                 throw new IllegalStateException(
-                                    "Request body is too big, limit size is " + MAX_BODY_SIZE);
+                                        "Request body is too big, limit size is " + MAX_BODY_SIZE);
                             }
                             int cap = Math.min(contentLength - out.size(), buf.length);
                             while (cap > 0 && (len = in.read(buf, 0, cap)) > 0) {

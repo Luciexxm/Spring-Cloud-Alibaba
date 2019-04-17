@@ -67,7 +67,7 @@ public class SentinelReactorSubscriber<T> extends InheritableBaseSubscriber<T> {
             return actual.currentContext();
         }
         return actual.currentContext()
-            .put(SentinelReactorConstants.SENTINEL_CONTEXT_KEY, currentEntry.getAsyncContext());
+                .put(SentinelReactorConstants.SENTINEL_CONTEXT_KEY, currentEntry.getAsyncContext());
     }
 
     private void doWithContextOrCurrent(Supplier<Optional<com.alibaba.csp.sentinel.context.Context>> contextSupplier,
@@ -90,7 +90,7 @@ public class SentinelReactorSubscriber<T> extends InheritableBaseSubscriber<T> {
         }
         try {
             AsyncEntry entry = SphU.asyncEntry(entryConfig.getResourceName(), entryConfig.getEntryType(),
-                entryConfig.getAcquireCount(), entryConfig.getArgs());
+                    entryConfig.getAcquireCount(), entryConfig.getArgs());
             this.currentEntry = entry;
             actual.onSubscribe(this);
         } catch (BlockException ex) {
@@ -110,7 +110,7 @@ public class SentinelReactorSubscriber<T> extends InheritableBaseSubscriber<T> {
     @Override
     protected void hookOnSubscribe(Subscription subscription) {
         doWithContextOrCurrent(() -> currentContext().getOrEmpty(SentinelReactorConstants.SENTINEL_CONTEXT_KEY),
-            this::entryWhenSubscribed);
+                this::entryWhenSubscribed);
     }
 
     @Override
@@ -120,7 +120,7 @@ public class SentinelReactorSubscriber<T> extends InheritableBaseSubscriber<T> {
             return;
         }
         doWithContextOrCurrent(() -> Optional.ofNullable(currentEntry).map(AsyncEntry::getAsyncContext),
-            () -> actual.onNext(value));
+                () -> actual.onNext(value));
 
         if (unary) {
             // For some cases of unary operator (Mono), we have to do this during onNext hook.

@@ -29,10 +29,10 @@ public class CtEntryTest {
         CtEntry entry2 = null;
         try {
             entry1 = new CtEntry(new StringResourceWrapper("res1", EntryType.IN),
-                null, ContextUtil.getContext());
+                    null, ContextUtil.getContext());
             assertSame(entry1, context.getCurEntry());
             entry2 = new CtEntry(new StringResourceWrapper("res2", EntryType.IN),
-                null, ContextUtil.getContext());
+                    null, ContextUtil.getContext());
             assertSame(entry2, context.getCurEntry());
 
             // Forget to exit for entry 2...
@@ -62,7 +62,7 @@ public class CtEntryTest {
             @Override
             public void run() {
                 CtEntry entry = new CtEntry(new StringResourceWrapper("res", EntryType.IN),
-                    null, ContextUtil.getContext());
+                        null, ContextUtil.getContext());
                 assertSame(entry, defaultContext.getCurEntry());
                 assertSame(defaultContext, ContextUtil.getContext());
                 entry.exit();
@@ -81,11 +81,11 @@ public class CtEntryTest {
         Context context = ContextUtil.getContext();
         try {
             CtEntry entry1 = new CtEntry(new StringResourceWrapper("resA", EntryType.IN),
-                null, context);
+                    null, context);
             entry1.exit();
             assertEquals(context, ContextUtil.getContext());
             CtEntry entry2 = new CtEntry(new StringResourceWrapper("resB", EntryType.IN),
-                null, context);
+                    null, context);
             entry2.exit();
             assertEquals(context, ContextUtil.getContext());
         } finally {
@@ -98,7 +98,7 @@ public class CtEntryTest {
     public void testEntryAndExitWithNullContext() {
         Context context = new NullContext();
         CtEntry entry = new CtEntry(new StringResourceWrapper("testEntryAndExitWithNullContext", EntryType.IN),
-            null, context);
+                null, context);
         assertNull(context.getCurEntry());
         entry.exit();
         assertNull(context.getCurEntry());
@@ -110,7 +110,7 @@ public class CtEntryTest {
     public void testGetLastNode() {
         Context context = new NullContext();
         CtEntry entry = new CtEntry(new StringResourceWrapper("testGetLastNode", EntryType.IN),
-            null, context);
+                null, context);
         assertNull(entry.parent);
         assertNull(entry.getLastNode());
         Entry parentEntry = mock(Entry.class);

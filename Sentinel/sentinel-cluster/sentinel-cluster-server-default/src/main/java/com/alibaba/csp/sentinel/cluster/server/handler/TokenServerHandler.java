@@ -62,7 +62,7 @@ public class TokenServerHandler extends ChannelInboundHandlerAdapter {
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
         globalConnectionPool.refreshLastReadTime(ctx.channel());
         if (msg instanceof ClusterRequest) {
-            ClusterRequest request = (ClusterRequest)msg;
+            ClusterRequest request = (ClusterRequest) msg;
 
             // Client ping with its namespace, add to connection manager.
             if (request.getType() == ClusterConstants.MSG_TYPE_PING) {
@@ -84,7 +84,7 @@ public class TokenServerHandler extends ChannelInboundHandlerAdapter {
 
     private void writeBadResponse(ChannelHandlerContext ctx, ClusterRequest request) {
         ClusterResponse<?> response = new ClusterResponse<>(request.getId(), request.getType(),
-            ClusterConstants.RESPONSE_STATUS_BAD, null);
+                ClusterConstants.RESPONSE_STATUS_BAD, null);
         writeResponse(ctx, response);
     }
 
@@ -93,11 +93,11 @@ public class TokenServerHandler extends ChannelInboundHandlerAdapter {
     }
 
     private void handlePingRequest(ChannelHandlerContext ctx, ClusterRequest request) {
-        if (request.getData() == null || StringUtil.isBlank((String)request.getData())) {
+        if (request.getData() == null || StringUtil.isBlank((String) request.getData())) {
             writeBadResponse(ctx, request);
             return;
         }
-        String namespace = (String)request.getData();
+        String namespace = (String) request.getData();
         String clientAddress = getRemoteAddress(ctx);
         // Add the remote namespace to connection manager.
         int curCount = ConnectionManager.addConnection(namespace, clientAddress).getConnectedCount();

@@ -98,7 +98,7 @@ public abstract class LeapArray<T> {
     private int calculateTimeIdx(/*@Valid*/ long timeMillis) {
         long timeId = timeMillis / windowLengthInMs;
         // Calculate current index so we can map the timestamp to the leap array.
-        return (int)(timeId % array.length());
+        return (int) (timeId % array.length());
     }
 
     protected long calculateWindowStart(/*@Valid*/ long timeMillis) {
@@ -210,7 +210,7 @@ public abstract class LeapArray<T> {
             return null;
         }
         long timeId = (timeMillis - windowLengthInMs) / windowLengthInMs;
-        int idx = (int)(timeId % array.length());
+        int idx = (int) (timeId % array.length());
         timeMillis = timeMillis - windowLengthInMs;
         WindowWrap<T> wrap = array.get(idx);
 

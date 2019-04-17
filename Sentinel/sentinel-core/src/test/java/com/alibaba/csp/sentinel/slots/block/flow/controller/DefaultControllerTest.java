@@ -20,7 +20,7 @@ public class DefaultControllerTest {
         TrafficShapingController controller = new DefaultController(threshold, RuleConstant.FLOW_GRADE_QPS);
         Node node = mock(Node.class);
         when(node.passQps()).thenReturn(threshold - 1)
-            .thenReturn(threshold);
+                .thenReturn(threshold);
 
         assertTrue(controller.canPass(node, 1));
         assertFalse(controller.canPass(node, 1));
@@ -32,7 +32,7 @@ public class DefaultControllerTest {
         TrafficShapingController controller = new DefaultController(threshold, RuleConstant.FLOW_GRADE_THREAD);
         Node node = mock(Node.class);
         when(node.curThreadNum()).thenReturn(threshold - 1)
-            .thenReturn(threshold);
+                .thenReturn(threshold);
 
         assertTrue(controller.canPass(node, 1));
         assertFalse(controller.canPass(node, 1));

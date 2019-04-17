@@ -34,16 +34,16 @@ public class DubboFallbackRegistryTest {
         // Test for default.
         BlockException ex = new FlowException("xxx");
         DubboFallbackRegistry.getConsumerFallback()
-            .handle(null, null, ex);
+                .handle(null, null, ex);
     }
 
     @Test
     public void testCustomFallback() {
         BlockException ex = new FlowException("xxx");
         DubboFallbackRegistry.setConsumerFallback(
-            (invoker, invocation, e) -> new RpcResult("Error: " + e.getClass().getName()));
+                (invoker, invocation, e) -> new RpcResult("Error: " + e.getClass().getName()));
         Result result = DubboFallbackRegistry.getConsumerFallback()
-            .handle(null, null, ex);
+                .handle(null, null, ex);
         Assert.assertFalse("The invocation should not fail", result.hasException());
         Assert.assertEquals("Error: " + ex.getClass().getName(), result.getValue());
     }

@@ -31,5 +31,6 @@ public final class DubboUtils {
         return invocation.getAttachment(DUBBO_APPLICATION_KEY, defaultValue);
     }
 
-    private DubboUtils() {}
+    private DubboUtils() {
+    }
 }

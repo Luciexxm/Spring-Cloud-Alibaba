@@ -42,7 +42,7 @@ public final class FilterUtil {
 
         if (lastSlashIndex >= 0) {
             pathInfo = pathInfo.substring(0, lastSlashIndex) + "/"
-                + StringUtil.trim(pathInfo.substring(lastSlashIndex + 1));
+                    + StringUtil.trim(pathInfo.substring(lastSlashIndex + 1));
         } else {
             pathInfo = "/" + StringUtil.trim(pathInfo);
         }
@@ -119,7 +119,7 @@ public final class FilterUtil {
                 continue;
             }
 
-            pathChars[level++] = (char)buf.length();
+            pathChars[level++] = (char) buf.length();
             buf.append(element).append('/');
         }
 
@@ -153,5 +153,6 @@ public final class FilterUtil {
         return i;
     }
 
-    private FilterUtil() {}
+    private FilterUtil() {
+    }
 }

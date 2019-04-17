@@ -63,8 +63,8 @@ public class SimpleHttpClient {
             return null;
         }
         return request(request.getSocketAddress(),
-            RequestMethod.GET, request.getRequestPath(), request.getParams(),
-            request.getCharset(), request.getSoTimeout());
+                RequestMethod.GET, request.getRequestPath(), request.getParams(),
+                request.getCharset(), request.getSoTimeout());
     }
 
     /**
@@ -79,15 +79,15 @@ public class SimpleHttpClient {
             return null;
         }
         return request(request.getSocketAddress(),
-            RequestMethod.POST, request.getRequestPath(),
-            request.getParams(), request.getCharset(),
-            request.getSoTimeout());
+                RequestMethod.POST, request.getRequestPath(),
+                request.getParams(), request.getCharset(),
+                request.getSoTimeout());
     }
 
     private SimpleHttpResponse request(InetSocketAddress socketAddress,
                                        RequestMethod type, String requestPath,
                                        Map<String, String> paramsMap, Charset charset, int soTimeout)
-        throws IOException {
+            throws IOException {
         Socket socket = null;
         BufferedWriter writer;
         try {
@@ -167,9 +167,9 @@ public class SimpleHttpClient {
                     continue;
                 }
                 paramsBuilder.append(URLEncoder.encode(entry.getKey(), charset.name()))
-                    .append("=")
-                    .append(URLEncoder.encode(entry.getValue(), charset.name()))
-                    .append("&");
+                        .append("=")
+                        .append(URLEncoder.encode(entry.getValue(), charset.name()))
+                        .append("&");
             }
             if (paramsBuilder.length() > 0) {
                 // Remove the last '&'.

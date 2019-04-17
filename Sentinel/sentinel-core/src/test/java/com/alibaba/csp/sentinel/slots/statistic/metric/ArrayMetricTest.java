@@ -40,7 +40,9 @@ public class ArrayMetricTest {
         BucketLeapArray leapArray = mock(BucketLeapArray.class);
         final WindowWrap<MetricBucket> windowWrap = new WindowWrap<MetricBucket>(windowLengthInMs, 0, new MetricBucket());
         when(leapArray.currentWindow()).thenReturn(windowWrap);
-        when(leapArray.values()).thenReturn(new ArrayList<MetricBucket>() {{ add(windowWrap.value()); }});
+        when(leapArray.values()).thenReturn(new ArrayList<MetricBucket>() {{
+            add(windowWrap.value());
+        }});
 
         ArrayMetric metric = new ArrayMetric(leapArray);
 

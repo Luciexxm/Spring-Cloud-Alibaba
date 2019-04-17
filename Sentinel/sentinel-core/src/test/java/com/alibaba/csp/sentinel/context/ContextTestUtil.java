@@ -39,5 +39,6 @@ public final class ContextTestUtil {
         Constants.ROOT.removeChildList();
     }
 
-    private ContextTestUtil() {}
+    private ContextTestUtil() {
+    }
 }

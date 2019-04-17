@@ -5,9 +5,9 @@
 
     <parent>
         <groupId>com.xxm</groupId>
-        <artifactId>myshop-dependencies</artifactId>
+        <artifactId>spring-cloud-alibaba-dependencies</artifactId>
         <version>1.0.0-SNAPSHOT</version>
-        <relativePath>../myshop-dependencies/pom.xml</relativePath>
+        <relativePath>../spring-cloud-alibaba-dependencies/pom.xml</relativePath>
     </parent>
 
     <artifactId>spring-cloud-alibaba-gateway</artifactId>

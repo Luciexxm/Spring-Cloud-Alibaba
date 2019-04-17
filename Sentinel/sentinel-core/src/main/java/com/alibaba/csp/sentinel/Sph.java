@@ -185,5 +185,5 @@ public interface Sph {
      * @since 1.5.0
      */
     Entry entryWithPriority(String name, EntryType type, int count, boolean prioritized, Object... args)
-        throws BlockException;
+            throws BlockException;
 }

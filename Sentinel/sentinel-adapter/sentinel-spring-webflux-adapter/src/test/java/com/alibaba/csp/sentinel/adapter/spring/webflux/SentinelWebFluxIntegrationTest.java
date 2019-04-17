@@ -47,8 +47,8 @@ public class SentinelWebFluxIntegrationTest {
 
     private void configureRulesFor(String resource, int count, String limitApp) {
         FlowRule rule = new FlowRule()
-            .setCount(count)
-            .setGrade(RuleConstant.FLOW_GRADE_QPS);
+                .setCount(count)
+                .setGrade(RuleConstant.FLOW_GRADE_QPS);
         rule.setResource(resource);
         if (StringUtil.isNotBlank(limitApp)) {
             rule.setLimitApp(limitApp);
@@ -60,11 +60,11 @@ public class SentinelWebFluxIntegrationTest {
     public void testWebFluxFilterBasic() throws Exception {
         String url = "/hello";
         this.webClient.get()
-            .uri(url)
-            .accept(MediaType.TEXT_PLAIN)
-            .exchange()
-            .expectStatus().isOk()
-            .expectBody(String.class).isEqualTo(HELLO_STR);
+                .uri(url)
+                .accept(MediaType.TEXT_PLAIN)
+                .exchange()
+                .expectStatus().isOk()
+                .expectBody(String.class).isEqualTo(HELLO_STR);
 
         ClusterNode cn = ClusterBuilderSlot.getClusterNode(url);
         assertNotNull(cn);
@@ -83,15 +83,15 @@ public class SentinelWebFluxIntegrationTest {
             return originUrl;
         }));
         this.webClient.get()
-            .uri(url1)
-            .exchange()
-            .expectStatus().isOk()
-            .expectBody(String.class).isEqualTo("Hello 1");
+                .uri(url1)
+                .exchange()
+                .expectStatus().isOk()
+                .expectBody(String.class).isEqualTo("Hello 1");
         this.webClient.get()
-            .uri(url2)
-            .exchange()
-            .expectStatus().isOk()
-            .expectBody(String.class).isEqualTo("Hello 2");
+                .uri(url2)
+                .exchange()
+                .expectStatus().isOk()
+                .expectBody(String.class).isEqualTo("Hello 2");
 
         ClusterNode cn = ClusterBuilderSlot.getClusterNode(fooPrefix + "*");
         assertEquals(2, cn.passQps(), 0.01);
@@ -106,14 +106,14 @@ public class SentinelWebFluxIntegrationTest {
         String url = "/error";
         String prefix = "blocked: ";
         WebFluxCallbackManager.setBlockHandler((exchange, t) -> ServerResponse.ok()
-            .contentType(MediaType.TEXT_PLAIN)
-            .syncBody(prefix + t.getMessage()));
+                .contentType(MediaType.TEXT_PLAIN)
+                .syncBody(prefix + t.getMessage()));
 
         this.webClient.get()
-            .uri(url)
-            .exchange()
-            .expectStatus().isOk()
-            .expectBody(String.class).value(StringContains.containsString(prefix));
+                .uri(url)
+                .exchange()
+                .expectStatus().isOk()
+                .expectBody(String.class).value(StringContains.containsString(prefix));
 
         WebFluxCallbackManager.resetBlockHandler();
     }
@@ -131,26 +131,26 @@ public class SentinelWebFluxIntegrationTest {
         });
 
         this.webClient.get()
-            .uri(url)
-            .accept(MediaType.TEXT_PLAIN)
-            .header(headerName, "userB")
-            .exchange()
-            .expectStatus().isOk()
-            .expectBody(String.class).isEqualTo(HELLO_STR);
+                .uri(url)
+                .accept(MediaType.TEXT_PLAIN)
+                .header(headerName, "userB")
+                .exchange()
+                .expectStatus().isOk()
+                .expectBody(String.class).isEqualTo(HELLO_STR);
         // This will be blocked.
         this.webClient.get()
-            .uri(url)
-            .accept(MediaType.TEXT_PLAIN)
-            .header(headerName, limitOrigin)
-            .exchange()
-            .expectStatus().isEqualTo(HttpStatus.TOO_MANY_REQUESTS)
-            .expectBody(String.class).value(StringContains.containsString(BLOCK_MSG_PREFIX));
+                .uri(url)
+                .accept(MediaType.TEXT_PLAIN)
+                .header(headerName, limitOrigin)
+                .exchange()
+                .expectStatus().isEqualTo(HttpStatus.TOO_MANY_REQUESTS)
+                .expectBody(String.class).value(StringContains.containsString(BLOCK_MSG_PREFIX));
         this.webClient.get()
-            .uri(url)
-            .accept(MediaType.TEXT_PLAIN)
-            .exchange()
-            .expectStatus().isOk()
-            .expectBody(String.class).isEqualTo(HELLO_STR);
+                .uri(url)
+                .accept(MediaType.TEXT_PLAIN)
+                .exchange()
+                .expectStatus().isOk()
+                .expectBody(String.class).isEqualTo(HELLO_STR);
 
         WebFluxCallbackManager.resetRequestOriginParser();
     }

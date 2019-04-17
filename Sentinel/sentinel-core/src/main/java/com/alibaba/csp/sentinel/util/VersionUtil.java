@@ -19,7 +19,7 @@ import com.alibaba.csp.sentinel.log.RecordLog;
 
 /**
  * Get version of Sentinel from {@code MANIFEST.MF} file.
- * 
+ *
  * @author jason
  * @since 0.2.1
  */
@@ -35,5 +35,6 @@ public final class VersionUtil {
         }
     }
 
-    private VersionUtil() {}
+    private VersionUtil() {
+    }
 }

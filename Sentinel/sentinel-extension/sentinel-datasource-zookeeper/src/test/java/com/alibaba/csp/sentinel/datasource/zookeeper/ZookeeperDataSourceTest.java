@@ -43,16 +43,17 @@ public class ZookeeperDataSourceTest {
         final String path = "/sentinel-zk-ds-demo/flow-HK";
 
         ReadableDataSource<String, List<FlowRule>> flowRuleDataSource = new ZookeeperDataSource<List<FlowRule>>(remoteAddress, path,
-            new Converter<String, List<FlowRule>>() {
-                @Override
-                public List<FlowRule> convert(String source) {
-                    return JSON.parseObject(source, new TypeReference<List<FlowRule>>() {});
-                }
-            });
+                new Converter<String, List<FlowRule>>() {
+                    @Override
+                    public List<FlowRule> convert(String source) {
+                        return JSON.parseObject(source, new TypeReference<List<FlowRule>>() {
+                        });
+                    }
+                });
         FlowRuleManager.register2Property(flowRuleDataSource.getProperty());
 
         CuratorFramework zkClient = CuratorFrameworkFactory.newClient(remoteAddress,
-            new ExponentialBackoffRetry(3, 1000));
+                new ExponentialBackoffRetry(3, 1000));
         zkClient.start();
         Stat stat = zkClient.checkExists().forPath(path);
         if (stat == null) {
@@ -116,21 +117,21 @@ public class ZookeeperDataSourceTest {
 
     private void publishThenTestFor(CuratorFramework zkClient, String path, String resourceName, long count) throws Exception {
         FlowRule rule = new FlowRule().setResource(resourceName)
-            .setLimitApp("default")
-            .as(FlowRule.class)
-            .setCount(count)
-            .setGrade(RuleConstant.FLOW_GRADE_QPS);
+                .setLimitApp("default")
+                .as(FlowRule.class)
+                .setCount(count)
+                .setGrade(RuleConstant.FLOW_GRADE_QPS);
         String ruleString = JSON.toJSONString(Collections.singletonList(rule));
         zkClient.setData().forPath(path, ruleString.getBytes());
 
         await().timeout(5, TimeUnit.SECONDS)
-            .until(new Callable<Boolean>() {
-                @Override
-                public Boolean call() throws Exception {
-                    List<FlowRule> rules = FlowRuleManager.getRules();
-                    return rules != null && !rules.isEmpty();
-                }
-            });
+                .until(new Callable<Boolean>() {
+                    @Override
+                    public Boolean call() throws Exception {
+                        List<FlowRule> rules = FlowRuleManager.getRules();
+                        return rules != null && !rules.isEmpty();
+                    }
+                });
 
         List<FlowRule> rules = FlowRuleManager.getRules();
         boolean exists = false;

@@ -50,7 +50,7 @@ public class FetchJsonTreeCommandHandler implements CommandHandler<String> {
         results.add(vo);
         String id = vo.getId();
         for (Node n : node.getChildList()) {
-            visit((DefaultNode)n, results, id);
+            visit((DefaultNode) n, results, id);
         }
     }
 }

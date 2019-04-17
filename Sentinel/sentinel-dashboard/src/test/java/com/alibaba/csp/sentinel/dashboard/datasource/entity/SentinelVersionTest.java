@@ -14,7 +14,7 @@ public class SentinelVersionTest {
         assertNotEquals(new SentinelVersion(1, 0, 0, ""), new SentinelVersion(1, 0, 0, null));
         assertEquals(new SentinelVersion(1, 0, 0, null), new SentinelVersion(1, 0, 0, null));
     }
-    
+
     @Test
     public void testGreater() {
         assertTrue(new SentinelVersion(2, 0, 0).greaterThan(new SentinelVersion(1, 0, 0)));

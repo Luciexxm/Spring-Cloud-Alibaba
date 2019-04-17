@@ -52,5 +52,6 @@ public final class WritableDataSourceRegistry {
         return systemSource;
     }
 
-    private WritableDataSourceRegistry() {}
+    private WritableDataSourceRegistry() {
+    }
 }

@@ -91,7 +91,7 @@ public final class StatLogger {
             long rollingTimeMillis = timeSlot + intervalMillis;
             int initialCapacity = prevData != null ? prevData.getStatCount() : 16;
             StatRollingData nextData = new StatRollingData(
-                this, initialCapacity, timeSlot, rollingTimeMillis);
+                    this, initialCapacity, timeSlot, rollingTimeMillis);
             if (ref.compareAndSet(prevData, nextData)) {
                 return prevData;
             }

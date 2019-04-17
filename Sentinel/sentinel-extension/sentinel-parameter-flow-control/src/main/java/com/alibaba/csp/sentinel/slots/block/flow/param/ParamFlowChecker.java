@@ -68,7 +68,7 @@ final class ParamFlowChecker {
                                           Object value) {
         try {
             if (Collection.class.isAssignableFrom(value.getClass())) {
-                for (Object param : ((Collection)value)) {
+                for (Object param : ((Collection) value)) {
                     if (!passSingleValueCheck(resourceWrapper, rule, count, param)) {
                         return false;
                     }
@@ -112,7 +112,7 @@ final class ParamFlowChecker {
                 int itemThreshold = rule.getParsedHotItems().get(value);
                 return ++threadCount <= itemThreshold;
             }
-            long threshold = (long)rule.getCount();
+            long threshold = (long) rule.getCount();
             return ++threadCount <= threshold;
         }
 
@@ -127,7 +127,7 @@ final class ParamFlowChecker {
     @SuppressWarnings("unchecked")
     private static Collection<Object> toCollection(Object value) {
         if (value instanceof Collection) {
-            return (Collection<Object>)value;
+            return (Collection<Object>) value;
         } else if (value.getClass().isArray()) {
             List<Object> params = new ArrayList<Object>();
             int length = Array.getLength(value);
@@ -187,5 +187,6 @@ final class ParamFlowChecker {
         return null;
     }
 
-    private ParamFlowChecker() {}
+    private ParamFlowChecker() {
+    }
 }

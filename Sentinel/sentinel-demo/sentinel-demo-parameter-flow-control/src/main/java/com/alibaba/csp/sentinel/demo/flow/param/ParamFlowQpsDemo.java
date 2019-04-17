@@ -38,7 +38,7 @@ public class ParamFlowQpsDemo {
     /**
      * Here we prepare different parameters to validate flow control by parameters.
      */
-    private static final Integer[] PARAMS = new Integer[] {PARAM_A, PARAM_B, PARAM_C, PARAM_D};
+    private static final Integer[] PARAMS = new Integer[]{PARAM_A, PARAM_B, PARAM_C, PARAM_D};
 
     private static final String RESOURCE_KEY = "resA";
 
@@ -54,15 +54,15 @@ public class ParamFlowQpsDemo {
     private static void initHotParamFlowRules() {
         // QPS mode, threshold is 5 for every frequent "hot spot" parameter in index 0 (the first arg).
         ParamFlowRule rule = new ParamFlowRule(RESOURCE_KEY)
-            .setParamIdx(0)
-            .setGrade(RuleConstant.FLOW_GRADE_QPS)
-            .setCount(5);
+                .setParamIdx(0)
+                .setGrade(RuleConstant.FLOW_GRADE_QPS)
+                .setCount(5);
         // We can set threshold count for specific parameter value individually.
         // Here we add an exception item. That means: QPS threshold of entries with parameter `PARAM_B` (type: int)
         // in index 0 will be 10, rather than the global threshold (5).
         ParamFlowItem item = new ParamFlowItem().setObject(String.valueOf(PARAM_B))
-            .setClassType(int.class.getName())
-            .setCount(10);
+                .setClassType(int.class.getName())
+                .setCount(10);
         rule.setParamFlowItemList(Collections.singletonList(item));
         ParamFlowRuleManager.loadRules(Collections.singletonList(rule));
     }

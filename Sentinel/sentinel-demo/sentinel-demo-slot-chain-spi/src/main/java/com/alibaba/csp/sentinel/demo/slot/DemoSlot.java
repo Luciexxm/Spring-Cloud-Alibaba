@@ -29,7 +29,7 @@ public class DemoSlot extends AbstractLinkedProcessorSlot<DefaultNode> {
 
     @Override
     public void entry(Context context, ResourceWrapper resourceWrapper, DefaultNode node, int count, boolean prioritized, Object... args)
-        throws Throwable {
+            throws Throwable {
         System.out.println("Current context: " + context.getName());
         System.out.println("Current entry resource: " + context.getCurEntry().getResourceWrapper().getName());
 

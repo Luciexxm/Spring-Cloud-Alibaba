@@ -29,15 +29,15 @@ public class EagleEyeLogUtil {
         String path = LogBase.getLogBaseDir() + FILE_NAME;
 
         statLogger = EagleEye.statLoggerBuilder("sentinel-block-log")
-            .intervalSeconds(1)
-            .entryDelimiter('|')
-            .keyDelimiter(',')
-            .valueDelimiter(',')
-            .maxEntryCount(6000)
-            .configLogFilePath(path)
-            .maxFileSizeMB(300)
-            .maxBackupIndex(3)
-            .buildSingleton();
+                .intervalSeconds(1)
+                .entryDelimiter('|')
+                .keyDelimiter(',')
+                .valueDelimiter(',')
+                .maxEntryCount(6000)
+                .configLogFilePath(path)
+                .maxFileSizeMB(300)
+                .maxBackupIndex(3)
+                .buildSingleton();
     }
 
     public static void log(String resource, String exceptionName, String ruleLimitApp, String origin, int count) {

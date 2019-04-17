@@ -35,8 +35,8 @@ public abstract class BlockException extends Exception {
      */
     public static RuntimeException THROW_OUT_EXCEPTION = new RuntimeException(BLOCK_EXCEPTION_FLAG);
 
-    public static StackTraceElement[] sentinelStackTrace = new StackTraceElement[] {
-        new StackTraceElement(BlockException.class.getName(), "block", "BlockException", 0)
+    public static StackTraceElement[] sentinelStackTrace = new StackTraceElement[]{
+            new StackTraceElement(BlockException.class.getName(), "block", "BlockException", 0)
     };
 
     static {

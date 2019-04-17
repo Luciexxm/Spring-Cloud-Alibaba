@@ -51,8 +51,8 @@ public class SphUTest {
 
         assertNotNull(e);
         assertTrue(StringUtil
-            .equalsIgnoreCase(e.resourceWrapper.getName(),
-                "com.alibaba.csp.sentinel.SphUTest:testMethodEntryNormal()"));
+                .equalsIgnoreCase(e.resourceWrapper.getName(),
+                        "com.alibaba.csp.sentinel.SphUTest:testMethodEntryNormal()"));
         assertEquals(e.resourceWrapper.getType(), EntryType.OUT);
         assertEquals(ContextUtil.getContext().getName(), Constants.CONTEXT_DEFAULT_NAME);
 
@@ -91,8 +91,8 @@ public class SphUTest {
 
         assertNotNull(e);
         assertTrue(StringUtil
-            .equalsIgnoreCase(e.resourceWrapper.getName(),
-                "com.alibaba.csp.sentinel.SphUTest:testMethodEntryNormal()"));
+                .equalsIgnoreCase(e.resourceWrapper.getName(),
+                        "com.alibaba.csp.sentinel.SphUTest:testMethodEntryNormal()"));
         assertEquals(e.resourceWrapper.getType(), EntryType.OUT);
 
         e.exit(2);

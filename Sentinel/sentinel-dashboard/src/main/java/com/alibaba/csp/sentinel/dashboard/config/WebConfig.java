@@ -84,12 +84,13 @@ public class WebConfig implements WebMvcConfigurer {
         registration.setFilter(new Filter() {
 
             @Override
-            public void init(FilterConfig filterConfig) throws ServletException { }
+            public void init(FilterConfig filterConfig) throws ServletException {
+            }
 
             @Override
             public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse,
                                  FilterChain filterChain) throws IOException, ServletException {
-                HttpServletRequest request = (HttpServletRequest)servletRequest;
+                HttpServletRequest request = (HttpServletRequest) servletRequest;
                 AuthUser authUser = authService.getAuthUser(request);
                 // authentication fail
                 if (authUser == null) {
@@ -102,7 +103,8 @@ public class WebConfig implements WebMvcConfigurer {
             }
 
             @Override
-            public void destroy() { }
+            public void destroy() {
+            }
         });
         registration.addUrlPatterns("/*");
         registration.setName("authenticationFilter");

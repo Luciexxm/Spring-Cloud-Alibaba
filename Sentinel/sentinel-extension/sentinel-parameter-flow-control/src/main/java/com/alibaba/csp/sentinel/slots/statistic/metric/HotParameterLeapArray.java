@@ -67,7 +67,7 @@ public class HotParameterLeapArray extends LeapArray<ParamMapBucket> {
     /**
      * Get "top-N" value-QPS map of provided event.
      *
-     * @param event target event
+     * @param event  target event
      * @param number max number of values
      * @return "top-N" value map
      */
@@ -109,7 +109,7 @@ public class HotParameterLeapArray extends LeapArray<ParamMapBucket> {
             if (x.getValue() == 0) {
                 break;
             }
-            doubleResult.put(x.getKey(), ((double)x.getValue()) / getIntervalInSecond());
+            doubleResult.put(x.getKey(), ((double) x.getValue()) / getIntervalInSecond());
         }
 
         return doubleResult;

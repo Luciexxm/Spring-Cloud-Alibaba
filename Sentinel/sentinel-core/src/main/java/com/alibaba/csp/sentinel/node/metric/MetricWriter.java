@@ -93,8 +93,8 @@ public class MetricWriter {
             throw new IllegalArgumentException();
         }
         RecordLog.info(
-            "[MetricWriter] Creating new MetricWriter, singleFileSize=" + singleFileSize + ", totalFileCount="
-                + totalFileCount);
+                "[MetricWriter] Creating new MetricWriter, singleFileSize=" + singleFileSize + ", totalFileCount="
+                        + totalFileCount);
         this.baseDir = METRIC_BASE_DIR;
         File dir = new File(baseDir);
         if (!dir.exists()) {
@@ -198,8 +198,8 @@ public class MetricWriter {
         for (File file : baseFile.listFiles()) {
             String fileName = file.getName();
             if (fileName.contains(fileNameModel)
-                && !fileName.endsWith(METRIC_FILE_INDEX_SUFFIX)
-                && !fileName.endsWith(".lck")) {
+                    && !fileName.endsWith(METRIC_FILE_INDEX_SUFFIX)
+                    && !fileName.endsWith(".lck")) {
                 list.add(file.getAbsolutePath());
             }
         }
@@ -289,9 +289,9 @@ public class MetricWriter {
         for (File file : files) {
             String fileName = file.getName();
             if (file.isFile()
-                && fileNameMatches(fileName, baseFileName)
-                && !fileName.endsWith(MetricWriter.METRIC_FILE_INDEX_SUFFIX)
-                && !fileName.endsWith(".lck")) {
+                    && fileNameMatches(fileName, baseFileName)
+                    && !fileName.endsWith(MetricWriter.METRIC_FILE_INDEX_SUFFIX)
+                    && !fileName.endsWith(".lck")) {
                 list.add(file.getAbsolutePath());
             }
         }
@@ -366,7 +366,7 @@ public class MetricWriter {
     /**
      * Form metric file name use the specific appName and pid. Note that only
      * form the file name, not include path.
-     *
+     * <p>
      * Note: {@link MetricFileNameComparator}'s implementation relays on the metric file name,
      * we should be careful when changing the metric file name.
      *

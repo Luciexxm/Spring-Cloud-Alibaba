@@ -45,7 +45,7 @@ public class NodeSelectorTest {
 
         EntranceNode entranceNode = null;
         for (Node node : Constants.ROOT.getChildList()) {
-            entranceNode = (EntranceNode)node;
+            entranceNode = (EntranceNode) node;
             if (entranceNode.getId().getName().equals(contextName)) {
                 break;
             } else {
@@ -58,10 +58,10 @@ public class NodeSelectorTest {
         Entry nodeA = SphU.entry(resName);
 
         assertNotNull(ContextUtil.getContext().getCurNode());
-        assertEquals(resName, ((DefaultNode)ContextUtil.getContext().getCurNode()).getId().getName());
+        assertEquals(resName, ((DefaultNode) ContextUtil.getContext().getCurNode()).getId().getName());
         boolean hasNode = false;
         for (Node node : entranceNode.getChildList()) {
-            if (((DefaultNode)node).getId().getName().equals(resName)) {
+            if (((DefaultNode) node).getId().getName().equals(resName)) {
                 hasNode = true;
             }
         }
@@ -98,16 +98,16 @@ public class NodeSelectorTest {
         assertNotSame(firstNode, anotherNode);
 
         for (Node node : Constants.ROOT.getChildList()) {
-            EntranceNode firstEntrance = (EntranceNode)node;
+            EntranceNode firstEntrance = (EntranceNode) node;
             if (firstEntrance.getId().getName().equals(firstEntry)) {
                 assertEquals(1, firstEntrance.getChildList().size());
                 for (Node child : firstEntrance.getChildList()) {
-                    assertEquals(resName, ((DefaultNode)child).getId().getName());
+                    assertEquals(resName, ((DefaultNode) child).getId().getName());
                 }
             } else if (firstEntrance.getId().getName().equals(anotherEntry)) {
                 assertEquals(1, firstEntrance.getChildList().size());
                 for (Node child : firstEntrance.getChildList()) {
-                    assertEquals(resName, ((DefaultNode)child).getId().getName());
+                    assertEquals(resName, ((DefaultNode) child).getId().getName());
                 }
             } else {
                 System.out.println("Multiple entries: " + firstEntrance.getId().getName());
@@ -124,19 +124,19 @@ public class NodeSelectorTest {
         Entry nodeA = SphU.entry("nodeA");
         assertSame(ContextUtil.getContext().getCurEntry(), nodeA);
 
-        DefaultNode dnA = (DefaultNode)nodeA.getCurNode();
+        DefaultNode dnA = (DefaultNode) nodeA.getCurNode();
         assertNotNull(dnA);
         assertSame("nodeA", dnA.getId().getName());
 
         Entry nodeB = SphU.entry("nodeB");
         assertSame(ContextUtil.getContext().getCurEntry(), nodeB);
-        DefaultNode dnB = (DefaultNode)nodeB.getCurNode();
+        DefaultNode dnB = (DefaultNode) nodeB.getCurNode();
         assertNotNull(dnB);
         assertTrue(dnA.getChildList().contains(dnB));
 
         Entry nodeC = SphU.entry("nodeC");
         assertSame(ContextUtil.getContext().getCurEntry(), nodeC);
-        DefaultNode dnC = (DefaultNode)nodeC.getCurNode();
+        DefaultNode dnC = (DefaultNode) nodeC.getCurNode();
         assertNotNull(dnC);
         assertTrue(dnB.getChildList().contains(dnC));
 

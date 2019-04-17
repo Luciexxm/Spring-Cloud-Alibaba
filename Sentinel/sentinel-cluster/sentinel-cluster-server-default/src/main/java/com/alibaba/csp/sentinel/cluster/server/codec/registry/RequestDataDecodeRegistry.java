@@ -39,7 +39,7 @@ public final class RequestDataDecodeRegistry {
     }
 
     public static EntityDecoder<ByteBuf, Object> getDecoder(int type) {
-        return (EntityDecoder<ByteBuf, Object>)DECODER_MAP.get(type);
+        return (EntityDecoder<ByteBuf, Object>) DECODER_MAP.get(type);
     }
 
     public static boolean removeDecoder(int type) {

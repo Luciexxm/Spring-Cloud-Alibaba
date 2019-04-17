@@ -93,7 +93,9 @@ class DateFileLogHandler extends Handler {
     @Override
     public void setFormatter(Formatter newFormatter) {
         super.setFormatter(newFormatter);
-        if (handler != null) { handler.setFormatter(newFormatter); }
+        if (handler != null) {
+            handler.setFormatter(newFormatter);
+        }
     }
 
     private boolean logFileExits() {

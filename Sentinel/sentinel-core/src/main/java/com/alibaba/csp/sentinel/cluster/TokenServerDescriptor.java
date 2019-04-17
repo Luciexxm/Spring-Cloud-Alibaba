@@ -53,9 +53,9 @@ public class TokenServerDescriptor {
     @Override
     public String toString() {
         return "TokenServerDescriptor{" +
-            "host='" + host + '\'' +
-            ", port=" + port +
-            ", type='" + type + '\'' +
-            '}';
+                "host='" + host + '\'' +
+                ", port=" + port +
+                ", type='" + type + '\'' +
+                '}';
     }
 }

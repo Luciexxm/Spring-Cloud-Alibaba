@@ -96,7 +96,7 @@ public class MetricSearcher {
         for (; i < fileNames.size(); i++) {
             String fileName = fileNames.get(i);
             long offset = findOffset(beginTimeMs, fileName,
-                MetricWriter.formIndexFileName(fileName), offsetInIndex);
+                    MetricWriter.formIndexFileName(fileName), offsetInIndex);
             offsetInIndex = 0;
             if (offset != -1) {
                 return metricsReader.readMetrics(fileNames, i, offset, recommendLines);
@@ -111,7 +111,7 @@ public class MetricSearcher {
      * identity will be read.
      */
     public synchronized List<MetricNode> findByTimeAndResource(long beginTimeMs, long endTimeMs, String identity)
-        throws Exception {
+            throws Exception {
         List<String> fileNames = MetricWriter.listMetricFiles(baseDir, baseFileName);
         //RecordLog.info("pid=" + pid + ", findByTimeAndResource([" + beginTimeMs + ", " + endTimeMs
         //    + "], " + identity + ")");

@@ -84,11 +84,11 @@ public class EntryConfig {
     @Override
     public String toString() {
         return "EntryConfig{" +
-            "resourceName='" + resourceName + '\'' +
-            ", entryType=" + entryType +
-            ", acquireCount=" + acquireCount +
-            ", args=" + Arrays.toString(args) +
-            ", contextConfig=" + contextConfig +
-            '}';
+                "resourceName='" + resourceName + '\'' +
+                ", entryType=" + entryType +
+                ", acquireCount=" + acquireCount +
+                ", args=" + Arrays.toString(args) +
+                ", contextConfig=" + contextConfig +
+                '}';
     }
 }

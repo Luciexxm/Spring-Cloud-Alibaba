@@ -45,10 +45,10 @@ public class HttpHeartbeatSender implements HeartbeatSender {
 
     private final int timeoutMs = 3000;
     private final RequestConfig requestConfig = RequestConfig.custom()
-        .setConnectionRequestTimeout(timeoutMs)
-        .setConnectTimeout(timeoutMs)
-        .setSocketTimeout(timeoutMs)
-        .build();
+            .setConnectionRequestTimeout(timeoutMs)
+            .setConnectTimeout(timeoutMs)
+            .setSocketTimeout(timeoutMs)
+            .build();
 
     private String consoleHost;
     private int consolePort;
@@ -106,14 +106,14 @@ public class HttpHeartbeatSender implements HeartbeatSender {
         }
         URIBuilder uriBuilder = new URIBuilder();
         uriBuilder.setScheme("http").setHost(consoleHost).setPort(consolePort)
-            .setPath("/registry/machine")
-            .setParameter("app", AppNameUtil.getAppName())
-            .setParameter("v", Constants.SENTINEL_VERSION)
-            .setParameter("version", String.valueOf(System.currentTimeMillis()))
-            .setParameter("hostname", HostNameUtil.getHostName())
-            .setParameter("ip", TransportConfig.getHeartbeatClientIp())
-            .setParameter("port", TransportConfig.getPort())
-            .setParameter("pid", String.valueOf(PidUtil.getPid()));
+                .setPath("/registry/machine")
+                .setParameter("app", AppNameUtil.getAppName())
+                .setParameter("v", Constants.SENTINEL_VERSION)
+                .setParameter("version", String.valueOf(System.currentTimeMillis()))
+                .setParameter("hostname", HostNameUtil.getHostName())
+                .setParameter("ip", TransportConfig.getHeartbeatClientIp())
+                .setParameter("port", TransportConfig.getPort())
+                .setParameter("pid", String.valueOf(PidUtil.getPid()));
 
         HttpGet request = new HttpGet(uriBuilder.build());
         request.setConfig(requestConfig);

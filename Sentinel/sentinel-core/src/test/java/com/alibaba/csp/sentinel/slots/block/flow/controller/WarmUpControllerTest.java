@@ -33,7 +33,7 @@ public class WarmUpControllerTest extends AbstractTimeBasedTest {
     @Test
     public void testWarmUp() throws InterruptedException {
         WarmUpController warmupController = new WarmUpController(10, 10, 3);
-        
+
         setCurrentMillis(System.currentTimeMillis());
 
         Node node = mock(Node.class);

@@ -34,7 +34,7 @@ public final class ResponseDataWriterRegistry {
         if (WRITER_MAP.containsKey(type)) {
             return false;
         }
-        WRITER_MAP.put(type, (EntityWriter<Object, ByteBuf>)writer);
+        WRITER_MAP.put(type, (EntityWriter<Object, ByteBuf>) writer);
         return true;
     }
 

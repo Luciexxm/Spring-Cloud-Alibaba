@@ -83,5 +83,6 @@ public final class WebFluxCallbackManager {
         WebFluxCallbackManager.requestOriginParser = requestOriginParser;
     }
 
-    private WebFluxCallbackManager() {}
+    private WebFluxCallbackManager() {
+    }
 }

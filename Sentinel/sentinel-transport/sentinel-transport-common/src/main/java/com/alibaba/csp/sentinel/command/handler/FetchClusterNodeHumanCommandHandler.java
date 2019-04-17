@@ -63,22 +63,22 @@ public class FetchClusterNodeHumanCommandHandler implements CommandHandler<Strin
         String format = FORMAT.replaceAll("80", String.valueOf(nameLength + 1));
 
         sb.append(String.format(format, "idx", "id", "thread", "pass", "blocked", "success", "total", "aRt",
-            "1m-pass", "1m-block", "1m-all", "exception")).append("\n");
+                "1m-pass", "1m-block", "1m-all", "exception")).append("\n");
         for (Entry<ResourceWrapper, ClusterNode> e : ClusterBuilderSlot.getClusterNodeMap().entrySet()) {
             if (e.getKey().getName().contains(name)) {
                 ClusterNode node = e.getValue();
                 String id = e.getKey().getShowName();
-                int lenNum = (int)Math.ceil((double)id.length() / nameLength) - 1;
+                int lenNum = (int) Math.ceil((double) id.length() / nameLength) - 1;
 
                 sb.append(String.format(format, i + 1, lenNum == 0 ? id : id.substring(0, nameLength),
-                    node.curThreadNum(), node.passQps(), node.blockQps(), node.successQps(), node.totalQps(),
-                    node.avgRt(), node.totalRequest() - node.blockRequest(), node.blockRequest(),
-                    node.totalRequest(), node.exceptionQps())).append("\n");
+                        node.curThreadNum(), node.passQps(), node.blockQps(), node.successQps(), node.totalQps(),
+                        node.avgRt(), node.totalRequest() - node.blockRequest(), node.blockRequest(),
+                        node.totalRequest(), node.exceptionQps())).append("\n");
                 for (int j = 1; j <= lenNum; ++j) {
                     int start = nameLength * j;
                     int end = j == lenNum ? id.length() : nameLength * (j + 1);
                     sb.append(String.format(format, "", id.substring(start, end), "", "", "", "", "", "", "", "", "",
-                        "", "", "")).append("\n");
+                            "", "", "")).append("\n");
                 }
 
                 if (++i == 30) {
