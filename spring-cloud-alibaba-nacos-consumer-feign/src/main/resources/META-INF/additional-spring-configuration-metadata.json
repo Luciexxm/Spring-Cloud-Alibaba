@@ -1,0 +1,14 @@
+{
+  "properties": [
+    {
+      "name": "spring.cloud.nacos.discovery.feign.sentinel.enabled",
+      "type": "java.lang.String",
+      "description": "Description for spring.cloud.nacos.discovery.feign.sentinel.enabled."
+    },
+    {
+      "name": "feign.sentinel.enabled",
+      "type": "java.lang.String",
+      "description": "Description for feign.sentinel.enabled."
+    }
+  ]
+}

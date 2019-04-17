@@ -1,0 +1,246 @@
+INFO 2019-03-06 10:38:00:722 AgentClassLoader :  F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-activemq-5.x-plugin-6.0.0-beta.jar loaded. 
+INFO 2019-03-06 10:38:00:728 AgentClassLoader :  F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-dubbo-plugin-6.0.0-beta.jar loaded. 
+INFO 2019-03-06 10:38:00:729 AgentClassLoader :  F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-elastic-job-2.x-plugin-6.0.0-beta.jar loaded. 
+INFO 2019-03-06 10:38:00:735 AgentClassLoader :  F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-elasticsearch-5.x-plugin-6.0.0-beta.jar loaded. 
+INFO 2019-03-06 10:38:00:745 AgentClassLoader :  F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-feign-default-http-9.x-plugin-6.0.0-beta.jar loaded. 
+INFO 2019-03-06 10:38:00:755 AgentClassLoader :  F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-grpc-1.x-plugin-6.0.0-beta.jar loaded. 
+INFO 2019-03-06 10:38:00:763 AgentClassLoader :  F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-h2-1.x-plugin-6.0.0-beta.jar loaded. 
+INFO 2019-03-06 10:38:00:775 AgentClassLoader :  F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-httpasyncclient-4.x-plugin-6.0.0-beta.jar loaded. 
+INFO 2019-03-06 10:38:00:791 AgentClassLoader :  F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-httpClient-4.x-plugin-6.0.0-beta.jar loaded. 
+INFO 2019-03-06 10:38:00:793 AgentClassLoader :  F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-hystrix-1.x-plugin-6.0.0-beta.jar loaded. 
+INFO 2019-03-06 10:38:00:801 AgentClassLoader :  F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-jdbc-commons-6.0.0-beta.jar loaded. 
+INFO 2019-03-06 10:38:00:803 AgentClassLoader :  F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-jedis-2.x-plugin-6.0.0-beta.jar loaded. 
+INFO 2019-03-06 10:38:00:816 AgentClassLoader :  F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-jetty-client-9.0-plugin-6.0.0-beta.jar loaded. 
+INFO 2019-03-06 10:38:00:818 AgentClassLoader :  F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-jetty-client-9.x-plugin-6.0.0-beta.jar loaded. 
+INFO 2019-03-06 10:38:00:835 AgentClassLoader :  F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-jetty-server-9.x-plugin-6.0.0-beta.jar loaded. 
+INFO 2019-03-06 10:38:00:837 AgentClassLoader :  F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-kafka-v1-plugin-6.0.0-beta.jar loaded. 
+INFO 2019-03-06 10:38:00:849 AgentClassLoader :  F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-mongodb-2.x-plugin-6.0.0-beta.jar loaded. 
+INFO 2019-03-06 10:38:00:865 AgentClassLoader :  F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-mongodb-3.x-plugin-6.0.0-beta.jar loaded. 
+INFO 2019-03-06 10:38:00:876 AgentClassLoader :  F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-mysql-5.x-plugin-6.0.0-beta.jar loaded. 
+INFO 2019-03-06 10:38:00:891 AgentClassLoader :  F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-nutz-http-1.x-plugin-6.0.0-beta.jar loaded. 
+INFO 2019-03-06 10:38:00:905 AgentClassLoader :  F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-nutz-mvc-annotation-1.x-plugin-6.0.0-beta.jar loaded. 
+INFO 2019-03-06 10:38:00:922 AgentClassLoader :  F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-okhttp-3.x-plugin-6.0.0-beta.jar loaded. 
+INFO 2019-03-06 10:38:00:937 AgentClassLoader :  F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-postgresql-8.x-plugin-6.0.0-beta.jar loaded. 
+INFO 2019-03-06 10:38:00:956 AgentClassLoader :  F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-rabbitmq-5.x-plugin-6.0.0-beta.jar loaded. 
+INFO 2019-03-06 10:38:00:971 AgentClassLoader :  F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-resttemplate-4.3.x-plugin-6.0.0-beta.jar loaded. 
+INFO 2019-03-06 10:38:00:974 AgentClassLoader :  F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-rocketmq-3.x-plugin-6.0.0-beta.jar loaded. 
+INFO 2019-03-06 10:38:00:992 AgentClassLoader :  F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-rocketmq-4.x-plugin-6.0.0-beta.jar loaded. 
+INFO 2019-03-06 10:38:01:010 AgentClassLoader :  F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-servicecomb-java-chassis-0.x-plugin-6.0.0-beta.jar loaded. 
+INFO 2019-03-06 10:38:01:012 AgentClassLoader :  F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-servicecomb-java-chassis-1.x-plugin-6.0.0-beta.jar loaded. 
+INFO 2019-03-06 10:38:01:021 AgentClassLoader :  F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-sharding-jdbc-1.5.x-plugin-6.0.0-beta.jar loaded. 
+INFO 2019-03-06 10:38:01:039 AgentClassLoader :  F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-spring-cloud-feign-1.x-plugin-6.0.0-beta.jar loaded. 
+INFO 2019-03-06 10:38:01:041 AgentClassLoader :  F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-spring-concurrent-util-4.x-plugin-6.0.0-beta.jar loaded. 
+INFO 2019-03-06 10:38:01:055 AgentClassLoader :  F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-spring-core-patch-6.0.0-beta.jar loaded. 
+INFO 2019-03-06 10:38:01:074 AgentClassLoader :  F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-springmvc-annotation-3.x-plugin-6.0.0-beta.jar loaded. 
+INFO 2019-03-06 10:38:01:080 AgentClassLoader :  F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-springmvc-annotation-4.x-plugin-6.0.0-beta.jar loaded. 
+INFO 2019-03-06 10:38:01:096 AgentClassLoader :  F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-springmvc-annotation-5.x-plugin-6.0.0-beta.jar loaded. 
+INFO 2019-03-06 10:38:01:104 AgentClassLoader :  F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-springmvc-annotation-commons-6.0.0-beta.jar loaded. 
+INFO 2019-03-06 10:38:01:106 AgentClassLoader :  F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-spymemcached-2.x-plugin-6.0.0-beta.jar loaded. 
+INFO 2019-03-06 10:38:01:121 AgentClassLoader :  F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-struts2-2.x-plugin-6.0.0-beta.jar loaded. 
+INFO 2019-03-06 10:38:01:128 AgentClassLoader :  F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-undertow-2.x-plugin-6.0.0-beta.jar loaded. 
+INFO 2019-03-06 10:38:01:138 AgentClassLoader :  F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-webflux-5.x-plugin-6.0.0-beta.jar loaded. 
+INFO 2019-03-06 10:38:01:148 AgentClassLoader :  F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-xmemcached-2.x-plugin-6.0.0-beta.jar loaded. 
+INFO 2019-03-06 10:38:01:155 AgentClassLoader :  F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\motan-plugin-6.0.0-beta.jar loaded. 
+INFO 2019-03-06 10:38:01:158 AgentClassLoader :  F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\sofa-rpc-plugin-6.0.0-beta.jar loaded. 
+INFO 2019-03-06 10:38:01:167 AgentClassLoader :  F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\spring-commons-6.0.0-beta.jar loaded. 
+INFO 2019-03-06 10:38:01:179 AgentClassLoader :  F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\tomcat-7.x-8.x-plugin-6.0.0-beta.jar loaded. 
+INFO 2019-03-06 10:38:01:183 AgentClassLoader :  F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\activations\apm-toolkit-log4j-1.x-activation-6.0.0-beta.jar loaded. 
+INFO 2019-03-06 10:38:01:185 AgentClassLoader :  F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\activations\apm-toolkit-log4j-2.x-activation-6.0.0-beta.jar loaded. 
+INFO 2019-03-06 10:38:01:187 AgentClassLoader :  F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\activations\apm-toolkit-logback-1.x-activation-6.0.0-beta.jar loaded. 
+INFO 2019-03-06 10:38:01:198 AgentClassLoader :  F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\activations\apm-toolkit-opentracing-activation-6.0.0-beta.jar loaded. 
+INFO 2019-03-06 10:38:01:211 AgentClassLoader :  F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\activations\apm-toolkit-trace-activation-6.0.0-beta.jar loaded. 
+INFO 2019-03-06 10:38:01:230 PluginResourcesResolver :  find skywalking plugin define in jar:file:F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-activemq-5.x-plugin-6.0.0-beta.jar!/skywalking-plugin.def 
+INFO 2019-03-06 10:38:01:231 PluginResourcesResolver :  find skywalking plugin define in jar:file:F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-dubbo-plugin-6.0.0-beta.jar!/skywalking-plugin.def 
+INFO 2019-03-06 10:38:01:232 PluginResourcesResolver :  find skywalking plugin define in jar:file:F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-elastic-job-2.x-plugin-6.0.0-beta.jar!/skywalking-plugin.def 
+INFO 2019-03-06 10:38:01:233 PluginResourcesResolver :  find skywalking plugin define in jar:file:F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-elasticsearch-5.x-plugin-6.0.0-beta.jar!/skywalking-plugin.def 
+INFO 2019-03-06 10:38:01:234 PluginResourcesResolver :  find skywalking plugin define in jar:file:F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-feign-default-http-9.x-plugin-6.0.0-beta.jar!/skywalking-plugin.def 
+INFO 2019-03-06 10:38:01:235 PluginResourcesResolver :  find skywalking plugin define in jar:file:F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-grpc-1.x-plugin-6.0.0-beta.jar!/skywalking-plugin.def 
+INFO 2019-03-06 10:38:01:236 PluginResourcesResolver :  find skywalking plugin define in jar:file:F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-h2-1.x-plugin-6.0.0-beta.jar!/skywalking-plugin.def 
+INFO 2019-03-06 10:38:01:237 PluginResourcesResolver :  find skywalking plugin define in jar:file:F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-httpasyncclient-4.x-plugin-6.0.0-beta.jar!/skywalking-plugin.def 
+INFO 2019-03-06 10:38:01:238 PluginResourcesResolver :  find skywalking plugin define in jar:file:F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-httpClient-4.x-plugin-6.0.0-beta.jar!/skywalking-plugin.def 
+INFO 2019-03-06 10:38:01:239 PluginResourcesResolver :  find skywalking plugin define in jar:file:F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-hystrix-1.x-plugin-6.0.0-beta.jar!/skywalking-plugin.def 
+INFO 2019-03-06 10:38:01:240 PluginResourcesResolver :  find skywalking plugin define in jar:file:F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-jedis-2.x-plugin-6.0.0-beta.jar!/skywalking-plugin.def 
+INFO 2019-03-06 10:38:01:241 PluginResourcesResolver :  find skywalking plugin define in jar:file:F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-jetty-client-9.0-plugin-6.0.0-beta.jar!/skywalking-plugin.def 
+INFO 2019-03-06 10:38:01:242 PluginResourcesResolver :  find skywalking plugin define in jar:file:F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-jetty-client-9.x-plugin-6.0.0-beta.jar!/skywalking-plugin.def 
+INFO 2019-03-06 10:38:01:243 PluginResourcesResolver :  find skywalking plugin define in jar:file:F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-jetty-server-9.x-plugin-6.0.0-beta.jar!/skywalking-plugin.def 
+INFO 2019-03-06 10:38:01:244 PluginResourcesResolver :  find skywalking plugin define in jar:file:F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-kafka-v1-plugin-6.0.0-beta.jar!/skywalking-plugin.def 
+INFO 2019-03-06 10:38:01:245 PluginResourcesResolver :  find skywalking plugin define in jar:file:F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-mongodb-2.x-plugin-6.0.0-beta.jar!/skywalking-plugin.def 
+INFO 2019-03-06 10:38:01:245 PluginResourcesResolver :  find skywalking plugin define in jar:file:F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-mongodb-3.x-plugin-6.0.0-beta.jar!/skywalking-plugin.def 
+INFO 2019-03-06 10:38:01:245 PluginResourcesResolver :  find skywalking plugin define in jar:file:F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-mysql-5.x-plugin-6.0.0-beta.jar!/skywalking-plugin.def 
+INFO 2019-03-06 10:38:01:246 PluginResourcesResolver :  find skywalking plugin define in jar:file:F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-nutz-http-1.x-plugin-6.0.0-beta.jar!/skywalking-plugin.def 
+INFO 2019-03-06 10:38:01:246 PluginResourcesResolver :  find skywalking plugin define in jar:file:F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-nutz-mvc-annotation-1.x-plugin-6.0.0-beta.jar!/skywalking-plugin.def 
+INFO 2019-03-06 10:38:01:247 PluginResourcesResolver :  find skywalking plugin define in jar:file:F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-okhttp-3.x-plugin-6.0.0-beta.jar!/skywalking-plugin.def 
+INFO 2019-03-06 10:38:01:247 PluginResourcesResolver :  find skywalking plugin define in jar:file:F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-postgresql-8.x-plugin-6.0.0-beta.jar!/skywalking-plugin.def 
+INFO 2019-03-06 10:38:01:248 PluginResourcesResolver :  find skywalking plugin define in jar:file:F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-rabbitmq-5.x-plugin-6.0.0-beta.jar!/skywalking-plugin.def 
+INFO 2019-03-06 10:38:01:248 PluginResourcesResolver :  find skywalking plugin define in jar:file:F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-resttemplate-4.3.x-plugin-6.0.0-beta.jar!/skywalking-plugin.def 
+INFO 2019-03-06 10:38:01:249 PluginResourcesResolver :  find skywalking plugin define in jar:file:F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-rocketmq-3.x-plugin-6.0.0-beta.jar!/skywalking-plugin.def 
+INFO 2019-03-06 10:38:01:249 PluginResourcesResolver :  find skywalking plugin define in jar:file:F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-rocketmq-4.x-plugin-6.0.0-beta.jar!/skywalking-plugin.def 
+INFO 2019-03-06 10:38:01:249 PluginResourcesResolver :  find skywalking plugin define in jar:file:F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-servicecomb-java-chassis-0.x-plugin-6.0.0-beta.jar!/skywalking-plugin.def 
+INFO 2019-03-06 10:38:01:250 PluginResourcesResolver :  find skywalking plugin define in jar:file:F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-servicecomb-java-chassis-1.x-plugin-6.0.0-beta.jar!/skywalking-plugin.def 
+INFO 2019-03-06 10:38:01:250 PluginResourcesResolver :  find skywalking plugin define in jar:file:F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-sharding-jdbc-1.5.x-plugin-6.0.0-beta.jar!/skywalking-plugin.def 
+INFO 2019-03-06 10:38:01:251 PluginResourcesResolver :  find skywalking plugin define in jar:file:F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-spring-cloud-feign-1.x-plugin-6.0.0-beta.jar!/skywalking-plugin.def 
+INFO 2019-03-06 10:38:01:251 PluginResourcesResolver :  find skywalking plugin define in jar:file:F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-spring-concurrent-util-4.x-plugin-6.0.0-beta.jar!/skywalking-plugin.def 
+INFO 2019-03-06 10:38:01:252 PluginResourcesResolver :  find skywalking plugin define in jar:file:F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-spring-core-patch-6.0.0-beta.jar!/skywalking-plugin.def 
+INFO 2019-03-06 10:38:01:252 PluginResourcesResolver :  find skywalking plugin define in jar:file:F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-springmvc-annotation-3.x-plugin-6.0.0-beta.jar!/skywalking-plugin.def 
+INFO 2019-03-06 10:38:01:253 PluginResourcesResolver :  find skywalking plugin define in jar:file:F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-springmvc-annotation-4.x-plugin-6.0.0-beta.jar!/skywalking-plugin.def 
+INFO 2019-03-06 10:38:01:253 PluginResourcesResolver :  find skywalking plugin define in jar:file:F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-springmvc-annotation-5.x-plugin-6.0.0-beta.jar!/skywalking-plugin.def 
+INFO 2019-03-06 10:38:01:253 PluginResourcesResolver :  find skywalking plugin define in jar:file:F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-springmvc-annotation-commons-6.0.0-beta.jar!/skywalking-plugin.def 
+INFO 2019-03-06 10:38:01:254 PluginResourcesResolver :  find skywalking plugin define in jar:file:F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-spymemcached-2.x-plugin-6.0.0-beta.jar!/skywalking-plugin.def 
+INFO 2019-03-06 10:38:01:254 PluginResourcesResolver :  find skywalking plugin define in jar:file:F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-struts2-2.x-plugin-6.0.0-beta.jar!/skywalking-plugin.def 
+INFO 2019-03-06 10:38:01:255 PluginResourcesResolver :  find skywalking plugin define in jar:file:F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-undertow-2.x-plugin-6.0.0-beta.jar!/skywalking-plugin.def 
+INFO 2019-03-06 10:38:01:255 PluginResourcesResolver :  find skywalking plugin define in jar:file:F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-webflux-5.x-plugin-6.0.0-beta.jar!/skywalking-plugin.def 
+INFO 2019-03-06 10:38:01:256 PluginResourcesResolver :  find skywalking plugin define in jar:file:F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\apm-xmemcached-2.x-plugin-6.0.0-beta.jar!/skywalking-plugin.def 
+INFO 2019-03-06 10:38:01:256 PluginResourcesResolver :  find skywalking plugin define in jar:file:F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\motan-plugin-6.0.0-beta.jar!/skywalking-plugin.def 
+INFO 2019-03-06 10:38:01:256 PluginResourcesResolver :  find skywalking plugin define in jar:file:F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\sofa-rpc-plugin-6.0.0-beta.jar!/skywalking-plugin.def 
+INFO 2019-03-06 10:38:01:257 PluginResourcesResolver :  find skywalking plugin define in jar:file:F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\plugins\tomcat-7.x-8.x-plugin-6.0.0-beta.jar!/skywalking-plugin.def 
+INFO 2019-03-06 10:38:01:257 PluginResourcesResolver :  find skywalking plugin define in jar:file:F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\activations\apm-toolkit-log4j-1.x-activation-6.0.0-beta.jar!/skywalking-plugin.def 
+INFO 2019-03-06 10:38:01:258 PluginResourcesResolver :  find skywalking plugin define in jar:file:F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\activations\apm-toolkit-log4j-2.x-activation-6.0.0-beta.jar!/skywalking-plugin.def 
+INFO 2019-03-06 10:38:01:258 PluginResourcesResolver :  find skywalking plugin define in jar:file:F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\activations\apm-toolkit-logback-1.x-activation-6.0.0-beta.jar!/skywalking-plugin.def 
+INFO 2019-03-06 10:38:01:259 PluginResourcesResolver :  find skywalking plugin define in jar:file:F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\activations\apm-toolkit-opentracing-activation-6.0.0-beta.jar!/skywalking-plugin.def 
+INFO 2019-03-06 10:38:01:259 PluginResourcesResolver :  find skywalking plugin define in jar:file:F:\gitRepo\Spring-Cloud-Alibaba\myshop-external-skywalking\agent\activations\apm-toolkit-trace-activation-6.0.0-beta.jar!/skywalking-plugin.def 
+DEBUG 2019-03-06 10:38:01:337 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.activemq.define.ActiveMQProducerInstrumentation. 
+DEBUG 2019-03-06 10:38:01:371 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.activemq.define.ActiveMQConsumerInstrumentation. 
+DEBUG 2019-03-06 10:38:01:372 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.dubbo.DubboInstrumentation. 
+DEBUG 2019-03-06 10:38:01:374 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.esjob.define.JobExecutorInstrumentation. 
+DEBUG 2019-03-06 10:38:01:375 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.elasticsearch.v5.define.TransportProxyClientInstrumentation. 
+DEBUG 2019-03-06 10:38:01:376 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.elasticsearch.v5.define.TransportActionNodeProxyInstrumentation. 
+DEBUG 2019-03-06 10:38:01:377 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.elasticsearch.v5.define.PlainListenableActionFutureInstrumentation. 
+DEBUG 2019-03-06 10:38:01:379 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.elasticsearch.v5.define.GenericActionInstrumentation. 
+DEBUG 2019-03-06 10:38:01:380 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.elasticsearch.v5.define.TransportClientNodesServiceInstrumentation. 
+DEBUG 2019-03-06 10:38:01:381 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.feign.http.v9.define.DefaultHttpClientInstrumentation. 
+DEBUG 2019-03-06 10:38:01:382 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.grpc.v1.define.AbstractStubInstrumentation. 
+DEBUG 2019-03-06 10:38:01:384 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.grpc.v1.define.AbstractServerImplBuilderInstrumentation. 
+DEBUG 2019-03-06 10:38:01:385 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.grpc.v1.define.ClientCallsInstrumentation. 
+DEBUG 2019-03-06 10:38:01:386 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.jdbc.h2.define.DriverInstrumentation. 
+DEBUG 2019-03-06 10:38:01:388 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.jdbc.h2.define.JdbcConnectionInstrumentation. 
+DEBUG 2019-03-06 10:38:01:390 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.jdbc.h2.define.PooledJdbcConnectionInstrumentation. 
+DEBUG 2019-03-06 10:38:01:391 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.jdbc.h2.define.JdbcXAConnectionInstrumentation. 
+DEBUG 2019-03-06 10:38:01:392 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.httpasyncclient.v4.define.HttpAsyncClientInstrumentation. 
+DEBUG 2019-03-06 10:38:01:393 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.httpasyncclient.v4.define.SessionRequestInstrumentation. 
+DEBUG 2019-03-06 10:38:01:395 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.httpasyncclient.v4.define.HttpAsyncRequestExecutorInstrumentation. 
+DEBUG 2019-03-06 10:38:01:396 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.httpClient.v4.define.AbstractHttpClientInstrumentation. 
+DEBUG 2019-03-06 10:38:01:398 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.httpClient.v4.define.InternalHttpClientInstrumentation. 
+DEBUG 2019-03-06 10:38:01:399 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.httpClient.v4.define.MinimalHttpClientInstrumentation. 
+DEBUG 2019-03-06 10:38:01:400 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.httpClient.v4.define.DefaultRequestDirectorInstrumentation. 
+DEBUG 2019-03-06 10:38:01:401 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.hystrix.v1.define.HystrixCommandInstrumentation. 
+DEBUG 2019-03-06 10:38:01:402 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.hystrix.v1.define.HystrixPluginsInstrumentation. 
+DEBUG 2019-03-06 10:38:01:403 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.jedis.v2.define.JedisClusterInstrumentation. 
+DEBUG 2019-03-06 10:38:01:405 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.jedis.v2.define.JedisInstrumentation. 
+DEBUG 2019-03-06 10:38:01:406 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.jetty.v90.client.define.HttpRequestInstrumentation. 
+DEBUG 2019-03-06 10:38:01:407 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.jetty.v9.client.define.HttpRequestInstrumentation. 
+DEBUG 2019-03-06 10:38:01:408 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.jetty.v9.server.define.JettyInstrumentation. 
+DEBUG 2019-03-06 10:38:01:410 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.jetty.v9.server.define.DispatcherInstrumentation. 
+DEBUG 2019-03-06 10:38:01:411 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.kafka.v1.define.CallbackInstrumentation. 
+DEBUG 2019-03-06 10:38:01:412 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.kafka.v1.define.KafkaConsumerInstrumentation. 
+DEBUG 2019-03-06 10:38:01:414 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.kafka.v1.define.KafkaProducerInstrumentation. 
+DEBUG 2019-03-06 10:38:01:415 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.kafka.v1.define.ProducerRecordInstrumentation. 
+DEBUG 2019-03-06 10:38:01:416 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.mongodb.v2.define.MongoDBCollectionInstrumentation. 
+DEBUG 2019-03-06 10:38:01:417 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.mongodb.v2.define.MongoDBCollectionImplInstrumentation. 
+DEBUG 2019-03-06 10:38:01:418 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.mongodb.v3.define.MongoDBInstrumentation. 
+DEBUG 2019-03-06 10:38:01:420 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.jdbc.mysql.define.DriverInstrumentation. 
+DEBUG 2019-03-06 10:38:01:422 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.jdbc.mysql.define.Mysql5xConnectionInstrumentation. 
+DEBUG 2019-03-06 10:38:01:424 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.jdbc.mysql.define.Mysql50ConnectionInstrumentation. 
+DEBUG 2019-03-06 10:38:01:425 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.jdbc.mysql.define.CallableInstrumentation. 
+DEBUG 2019-03-06 10:38:01:426 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.jdbc.mysql.define.PreparedStatementInstrumentation. 
+DEBUG 2019-03-06 10:38:01:427 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.jdbc.mysql.define.StatementInstrumentation. 
+DEBUG 2019-03-06 10:38:01:428 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.jdbc.mysql.define.FailoverConnectionProxyInstrumentation. 
+DEBUG 2019-03-06 10:38:01:429 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.jdbc.mysql.define.LoadBalancedConnectionProxyInstrumentation. 
+DEBUG 2019-03-06 10:38:01:430 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.jdbc.mysql.define.ReplicationConnectionProxyInstrumentation. 
+DEBUG 2019-03-06 10:38:01:431 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.nutz.http.sync.define.NutzHttpGetSenderInstrumentation. 
+DEBUG 2019-03-06 10:38:01:433 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.nutz.http.sync.define.NutzHttpPostSenderInstrumentation. 
+DEBUG 2019-03-06 10:38:01:434 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.nutz.http.sync.define.NutzHttpFilePostSenderInstrumentation. 
+DEBUG 2019-03-06 10:38:01:435 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.nutz.mvc.define.ActionInstrumentation. 
+DEBUG 2019-03-06 10:38:01:436 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.okhttp.v3.define.RealCallInstrumentation. 
+DEBUG 2019-03-06 10:38:01:437 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.okhttp.v3.define.CallbackInstrumentation. 
+DEBUG 2019-03-06 10:38:01:439 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.okhttp.v3.define.AsyncCallInstrumentation. 
+DEBUG 2019-03-06 10:38:01:441 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.jdbc.postgresql.define.DriverInstrumentation. 
+DEBUG 2019-03-06 10:38:01:442 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.jdbc.postgresql.define.Jdbc3ConnectionInstrumentation. 
+DEBUG 2019-03-06 10:38:01:443 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.jdbc.postgresql.define.Jdbc4ConnectionInstrumentation. 
+DEBUG 2019-03-06 10:38:01:444 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.jdbc.postgresql.define.ConnectionInstrumentation. 
+DEBUG 2019-03-06 10:38:01:445 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.jdbc.postgresql.define.AbstractJdbc2StatementInstrumentation. 
+DEBUG 2019-03-06 10:38:01:446 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.jdbc.postgresql.define.PgCallableStatementInstrumentation. 
+DEBUG 2019-03-06 10:38:01:447 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.jdbc.postgresql.define.PgPreparedStatementInstrumentation. 
+DEBUG 2019-03-06 10:38:01:449 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.jdbc.postgresql.define.PgStatementInstrumentation. 
+DEBUG 2019-03-06 10:38:01:450 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.rabbitmq.define.RabbitMQProducerInstrumentation. 
+DEBUG 2019-03-06 10:38:01:451 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.rabbitmq.define.RabbitMQConsumerInstrumentation. 
+DEBUG 2019-03-06 10:38:01:452 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.spring.resttemplate.sync.define.RestTemplateInstrumentation. 
+DEBUG 2019-03-06 10:38:01:454 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.spring.resttemplate.async.define.ResponseExtractorFutureInstrumentation. 
+DEBUG 2019-03-06 10:38:01:455 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.spring.resttemplate.async.define.RestTemplateInstrumentation. 
+DEBUG 2019-03-06 10:38:01:456 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.rocketMQ.v3.define.ConsumeMessageConcurrentlyInstrumentation. 
+DEBUG 2019-03-06 10:38:01:458 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.rocketMQ.v3.define.ConsumeMessageOrderlyInstrumentation. 
+DEBUG 2019-03-06 10:38:01:459 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.rocketMQ.v3.define.MQClientAPIImplInstrumentation. 
+DEBUG 2019-03-06 10:38:01:460 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.rocketMQ.v3.define.SendCallbackInstrumentation. 
+DEBUG 2019-03-06 10:38:01:462 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.rocketMQ.v4.define.ConsumeMessageConcurrentlyInstrumentation. 
+DEBUG 2019-03-06 10:38:01:463 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.rocketMQ.v4.define.ConsumeMessageOrderlyInstrumentation. 
+DEBUG 2019-03-06 10:38:01:464 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.rocketMQ.v4.define.MQClientAPIImplInstrumentation. 
+DEBUG 2019-03-06 10:38:01:465 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.rocketMQ.v4.define.SendCallbackInstrumentation. 
+DEBUG 2019-03-06 10:38:01:466 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.servicecomb.define.ProducerOperationHandlerInstrumentation. 
+DEBUG 2019-03-06 10:38:01:468 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.servicecomb.define.TransportClientHandlerInstrumentation. 
+DEBUG 2019-03-06 10:38:01:469 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.servicecomb.v1.define.ProducerOperationHandlerInstrumentation. 
+DEBUG 2019-03-06 10:38:01:470 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.servicecomb.v1.define.TransportClientHandlerInstrumentation. 
+DEBUG 2019-03-06 10:38:01:471 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.sjdbc.define.ExecutorInstrumentation. 
+DEBUG 2019-03-06 10:38:01:473 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.spring.cloud.netflix.feign.v11.define.NetflixFeignInstrumentation. 
+DEBUG 2019-03-06 10:38:01:474 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.spring.concurrent.define.FailureCallbackInstrumentation. 
+DEBUG 2019-03-06 10:38:01:475 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.spring.concurrent.define.SuccessCallbackInstrumentation. 
+DEBUG 2019-03-06 10:38:01:476 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.spring.concurrent.define.ListenableFutureCallbackInstrumentation. 
+DEBUG 2019-03-06 10:38:01:478 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.spring.patch.define.AopProxyFactoryInstrumentation. 
+DEBUG 2019-03-06 10:38:01:479 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.spring.patch.define.AutowiredAnnotationProcessorInstrumentation. 
+DEBUG 2019-03-06 10:38:01:481 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.spring.patch.define.AopExpressionMatchInstrumentation. 
+DEBUG 2019-03-06 10:38:01:482 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.spring.patch.define.BeanWrapperImplInstrumentation. 
+DEBUG 2019-03-06 10:38:01:483 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.spring.mvc.v3.define.ControllerInstrumentation. 
+DEBUG 2019-03-06 10:38:01:485 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.spring.mvc.v3.define.HandlerMethodInstrumentation. 
+DEBUG 2019-03-06 10:38:01:486 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.spring.mvc.v3.define.InvocableHandlerInstrumentation. 
+DEBUG 2019-03-06 10:38:01:487 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.spring.mvc.v3.define.HandlerMethodInvokerInstrumentation. 
+DEBUG 2019-03-06 10:38:01:488 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.spring.mvc.v4.define.ControllerInstrumentation. 
+DEBUG 2019-03-06 10:38:01:491 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.spring.mvc.v4.define.RestControllerInstrumentation. 
+DEBUG 2019-03-06 10:38:01:492 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.spring.mvc.v4.define.HandlerMethodInstrumentation. 
+DEBUG 2019-03-06 10:38:01:493 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.spring.mvc.v4.define.InvocableHandlerInstrumentation. 
+DEBUG 2019-03-06 10:38:01:494 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.spring.mvc.v5.define.ControllerInstrumentation. 
+DEBUG 2019-03-06 10:38:01:497 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.spring.mvc.v5.define.RestControllerInstrumentation. 
+DEBUG 2019-03-06 10:38:01:499 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.spring.mvc.v5.define.HandlerMethodInstrumentation. 
+DEBUG 2019-03-06 10:38:01:501 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.spring.mvc.commons.define.AnnotationMethodHandlerAdapterInstrumentation. 
+DEBUG 2019-03-06 10:38:01:502 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.spymemcached.v2.define.MemcachedInstrumentation. 
+DEBUG 2019-03-06 10:38:01:504 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.struts2.define.Struts2Instrumentation. 
+DEBUG 2019-03-06 10:38:01:505 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.undertow.v2x.define.RequestDispatcherImplInstrumentation. 
+DEBUG 2019-03-06 10:38:01:507 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.undertow.v2x.define.UndertowInstrumentation. 
+DEBUG 2019-03-06 10:38:01:508 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.spring.webflux.v5.define.HttpServerOperations20xInstrumentation. 
+DEBUG 2019-03-06 10:38:01:509 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.spring.webflux.v5.define.HttpServerOperations21xInstrumentation. 
+DEBUG 2019-03-06 10:38:01:511 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.spring.webflux.v5.define.ControllerInstrumentation. 
+DEBUG 2019-03-06 10:38:01:513 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.spring.webflux.v5.define.RestControllerInstrumentation. 
+DEBUG 2019-03-06 10:38:01:515 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.xmemcached.v2.define.XMemcachedInstrumentation. 
+DEBUG 2019-03-06 10:38:01:516 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.motan.define.MotanConsumerInstrumentation. 
+DEBUG 2019-03-06 10:38:01:517 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.motan.define.MotanProviderInstrumentation. 
+DEBUG 2019-03-06 10:38:01:519 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.sofarpc.SofaRpcConsumerInstrumentation. 
+DEBUG 2019-03-06 10:38:01:521 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.sofarpc.SofaRpcProviderInstrumentation. 
+DEBUG 2019-03-06 10:38:01:522 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.tomcat78x.define.TomcatInstrumentation. 
+DEBUG 2019-03-06 10:38:01:523 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.plugin.tomcat78x.define.ApplicationDispatcherInstrumentation. 
+DEBUG 2019-03-06 10:38:01:525 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.toolkit.activation.log.log4j.v1.x.TraceIdPatternConverterActivation. 
+DEBUG 2019-03-06 10:38:01:526 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.toolkit.activation.log.log4j.v2.x.Log4j2OutputAppenderActivation. 
+DEBUG 2019-03-06 10:38:01:527 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.toolkit.activation.log.logback.v1.x.LogbackPatternConverterActivation. 
+DEBUG 2019-03-06 10:38:01:529 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.toolkit.activation.log.logback.v1.x.mdc.MDCConverterActivation. 
+DEBUG 2019-03-06 10:38:01:530 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.toolkit.activation.opentracing.tracer.SkywalkingTracerActivation. 
+DEBUG 2019-03-06 10:38:01:531 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.toolkit.activation.opentracing.span.SkywalkingSpanActivation. 
+DEBUG 2019-03-06 10:38:01:533 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.toolkit.activation.opentracing.continuation.SkywalkingContinuationActivation. 
+DEBUG 2019-03-06 10:38:01:534 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.toolkit.activation.trace.ActiveSpanTagActivation. 
+DEBUG 2019-03-06 10:38:01:536 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.toolkit.activation.trace.TraceAnnotationActivation. 
+DEBUG 2019-03-06 10:38:01:537 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.toolkit.activation.trace.TraceContextActivation. 
+DEBUG 2019-03-06 10:38:01:538 PluginBootstrap :  loading plugin class org.apache.skywalking.apm.toolkit.activation.trace.CallableOrRunnableActivation. 
+DEBUG 2019-03-06 10:38:02:731 GRPCChannelManager :  Selected collector grpc service running, reconnect:true. 
+DEBUG 2019-03-06 10:38:02:733 ServiceAndEndpointRegisterClient :  ServiceAndEndpointRegisterClient running, status:DISCONNECT. 
+ERROR 2019-03-06 10:38:02:736 GRPCChannelManager :  Create channel to localhost:11800-jar fail. 
+java.lang.NumberFormatException: For input string: "11800-jar"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.apache.skywalking.apm.agent.core.remote.GRPCChannelManager.run(GRPCChannelManager.java:102)
+	at org.apache.skywalking.apm.util.RunnableWithExceptionProtection.run(RunnableWithExceptionProtection.java:36)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+DEBUG 2019-03-06 10:38:02:754 GRPCChannelManager :  Selected collector grpc service is not available. Wait 30 seconds to retry 
+DEBUG 2019-03-06 10:38:02:776 GRPCChannelManager :  Selected collector grpc service shutdown. 
