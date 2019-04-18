@@ -26,7 +26,7 @@
         <!-- Spring Cloud Settings -->
         <spring-cloud.version>Finchley.SR2</spring-cloud.version>
         <spring-cloud-alibaba.version>0.2.1.RELEASE</spring-cloud-alibaba.version>
-
+        <spring-cloud-alibaba-rocketmq>2.1.0.BUILD-SNAPSHOT</spring-cloud-alibaba-rocketmq>
         <!-- Spring Boot Settings -->
         <spring-boot-alibaba-druid.version>1.1.10</spring-boot-alibaba-druid.version>
         <spring-boot-tk-mybatis.version>2.1.4</spring-boot-tk-mybatis.version>
@@ -68,6 +68,12 @@
                 <groupId>com.github.pagehelper</groupId>
                 <artifactId>pagehelper-spring-boot-starter</artifactId>
                 <version>${spring-boot-pagehelper.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-stream-rocketmq</artifactId>
+                <version>${spring-cloud-alibaba-rocketmq}</version>
             </dependency>
             <!-- Spring Boot End -->
 
