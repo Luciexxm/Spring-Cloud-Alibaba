@@ -1,4 +1,4 @@
-# Spring Cloud Alibaba For MyShop
+# Spring Cloud Alibaba
 
 
 ## 开发环境
